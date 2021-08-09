@@ -13,44 +13,331 @@
 
 
 <!--Header with sidepanel nav and logo-->
-<div class="top_section">
+<div id="Home" class="top_section">
   <button class="openbtn" onclick="openNav()">☰</button>  
   <div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#"><i class="fa fa-home icon"></i>Home</a>
-    <a href="#"><i class="fa fa-user icon"></i>About Us</a>
-    <a href="#"><i class="fa fa-question-circle icon"></i>Query</a>
-    <a href="#"><i class="fa fa-envelope icon"></i>Contact Us</a>
-  </div>
-  <div>
-  <div id="companyLogo" class="company_logo_div">
-    <img class="company_logo" src="./assets/gifs/AliveToCode Logo.gif">
-    <h1 class="name_slogan">Alive To Code</h1>
-    <h6 class="name_slogan">SINCE BIRTH</h6>
-  </div> 
-
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#Home" onclick="closeNav()"><i class="fa fa-home icon"></i>Home</a>
+    <a href="#About" onclick="closeNav()"><i class="fa fa-user icon"></i>About Us</a>
+    <a href="#Query" onclick="closeNav()"><i class="fa fa-question-circle icon"></i>Query</a>
+    <a href="#Contact" onclick="closeNav()"><i class="fa fa-envelope icon"></i>Contact Us</a>
   </div>
 
-</div>
+ 
+  
+    <div>
+      <img src="./assets/gifs/AliveToCode Logo.gif" alt="AliveToCode" style="height: 15%;width: 15%;margin-left: auto;margin-right: auto;display: block;margin-top: -3%;" >
+    </div>
+   <div class="footer-center footer-distributed" style="background-color: transparent;margin-top: -3%;">
+    <h3 style="text-align: center;">AliveTo<span>Code</span></h3>  
+    <h5 style="text-align: center;color: white;margin-top: 0%;">SINCE BIRTH</h5>
+   </div>
 </div>
 <!--Adding three column cards in a row div-->
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="margin-top: auto;">
       <img class="logos" src="./assets/images/pyqp_icon01.png">
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Previous Year Question Papers(PYQP)</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>BCA, MCA, BBA, MBA PYQP's available</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Papers are available with solution</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Solved papers 2020-2017</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>LNMCBM and BRABU papers only</h3>
+      <div>
+        <button class="button">BCA PYQP's</button>
+      </div>
+      <div>
+        <button class="button">MCA PYQP's</button>
+      </div>
+      <div>
+        <button class="button">BBA PYQP's</button>
+      </div>
+      <div>
+        <button class="button">MBA PYQP's</button>
+      </div>
     </div>
   </div>
   <div class="column">
     <div class="card">
       <img class="logos" src="./assets/images/notes_icon.png">
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes of different papers</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>for BCA, MCA, BBA, MBA available</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes are prepared to help</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes can be downloaded</h3>
+      <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 10%;"> ..... </h3>
+      <div>
+        <button class="button">BCA NOTES</button>
+      </div>
+      <div>
+        <button class="button">MCA NOTES</button>
+      </div>
+      <div>
+        <button class="button">BBA NOTES</button>
+      </div>
+      <div>
+        <button class="button">MBA NOTES</button>
+      </div>
     </div>
   </div>
   <div class="column">
     <div class="card">
       <img class="logos" src="./assets/images/syllabus_icon.png">
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Syllabus</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>for BCA, MCA, BBA, MBA available</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Syllabus is available as PDF</h3>
+      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Syllabus can be downloaded</h3>
+      <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 16%;">......</h3>
+      <div>
+        <button class="button">BCA SYLLABUS</button>
+      </div>
+      <div>
+        <button class="button">BCA SYLLABUS</button>
+      </div>
+      <div>
+        <button class="button">BCA SYLLABUS</button>
+      </div>
+      <div>
+        <button class="button">BCA SYLLABUS</button>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!--<div id="About">
+  <div class="about_card">
+    //First comment start<div class="abt_row">
+      <div class="abt_column">
+        <div class="abt_card">
+          <img class="logos" src="./assets/images/pyqp_icon01.png">
+        </div>
+      </div>
+      <div class="abt_column">
+        <div class="abt_card">
+          <img class="logos" src="./assets/images/notes_icon.png">
+        </div>
+      </div>
+      <div class="abt_column">
+        <div class="abt_card">
+          <img class="logos" src="./assets/images/syllabus_icon.png">
+        </div>
+      </div>
+       <div class="abt_column">
+        <div class="abt_card">
+          <img class="logos" src="./assets/images/syllabus_icon.png">
+        </div>
+      </div>
+    </div> //first comment end
+
+    <u style= "text-decoration-color: #008080;padding: 20px;"><h1 style="text-align: center ;">About Us !</h1></u>
+    <h3 style="text-align: center;"></h3>
+    
+
+    <h2 style="text-align: center;">Welcome To <span id="W_Name1">Alive To Code</span></h2>
+    <p><span id="W_Name2">Alive To Code</span> is a Professional <span id="W_Type1">Academic resource provider</span> Platform. Here we will provide you only interesting content, which you will like very much. We're dedicated to providing you the best of <span id="W_Type2">Academic resource provider</span>, with a focus on dependability and <span id="W_Spec">Previous Year Question Papers Available</span>. Our About-us page was created with the help of the <a href="www.blogearns.com">About-us Generator</a>. We're working to turn our passion for <span id="W_Type3">Academic resource provider</span> into a booming online website. We hope you enjoy our <span id="W_Type4">Academic resource provider</span> as much as we enjoy offering them to you.</p>
+<p>I will keep posting more important posts on my Website for all of you. Please give your support and love.</p>
+<p style="font-weight: bold; text-align: center;">Thanks For Visiting Our Site<br><br>
+<span style="color: blue; font-size: 16px; font-weight: bold; text-align: center;">Have a nice day !</span></p>
+<div class="abt_row">
+  <div class="abt_column">
+    <div class="abt_card">
+      <img class="abt_img" src="./assets/images/img01.png">
+      <h2 style="text-align: center;color: rgb(51, 50, 50);">DEEPANSH KUMAR</h2>
+        <h3>(Programmer)</h5>
+        <h4 style="color: #008080;">Speciality:Design & Development</h5>
+
+    </div>
+  </div>
+  <div class="abt_column">
+    <div class="abt_card">
+      <img class="abt_img"src="./assets/images/img02.png">
+      <h2 style="text-align: center;color: rgb(51, 50, 50);">PARTH CHAUDHARY</h2>
+        <h3>(Programmer)</h5>
+        <h4 style="color: #fbf36f;">Speciality:Design & Development</h5>
+    </div>
+  </div>
+  <div class="abt_column">
+    <div class="abt_card">
+      <img class="abt_img" src="./assets/images/img01.png">
+      <h2 style="text-align: center;color: rgb(51, 50, 50);">RAUNAK RAJ</h2>
+        <h3>(Programmer)</h5>
+        <h4 style="color:#008080;">Speciality:Design & Development</h5>
+    </div>
+  </div>
+   <div class="abt_column">
+    <div class="abt_card">`
+      <img class="abt_img" src="./assets/images/img02.png">
+      <h2 style="text-align: center;color: rgb(51, 50, 50);">SANDEEP MAZUMDAR</h2>
+        <h3>(Programmer)</h5>
+        <h4 style="color:#fbf36f;">Speciality:Design & Development</h5>
     </div>
   </div>
 </div>
+  </div>
+</div>-->
+
+<!--About Us Section-->
+<div id="About" class="about_us_section">
+  <h1>About Us</h1>
+  <h3>Welcome to AliveToCode</h3>
+  <p>AliveToCode is an organization formed by 'QuadTeam'.</p>
+  <p>This site is to provide the academic contents to BCA, MCA, BBA, MBA students studying in <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;">LNMCBM</a>  or  <a href="https://www.brabu.net/" style="color: #008080;text-decoration: solid;">BRABU</a></p>
+
+  <p></p>
+</div>
+
+<h2 style="text-align:center">Our QuadTeam</h2>
+<div class="about_us_row">
+  <div class="about_us_column">
+    <div class="about_us_card">
+      <img src="./assets/images/img01.jpg" alt="SANDEEP MAZUMDAR" style="width:100%">
+      <div class="about_us_container">
+        <h2>SANDEEP MAZUMDAR</h2>
+        <p class="about_us_title">Designer & Programmer</p>
+        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"> LNMCBM</a></p>
+        <p><a class="gmail_link" href="mailto:raunakraj@gmail.com" >raunakraj74730@gmail.com</a></p>      </div>
+    </div>
+  </div>
+
+  <div class="about_us_column">
+    <div class="about_us_card">
+      <img src="./assets/images/img01.jpg" alt="RAUNAK RAJ" style="width:100%">
+      <div class="about_us_container">
+        <h2>RAUNAK RAJ</h2>
+        <p class="about_us_title">Designer & Programmer</p>
+        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"> LNMCBM</a></p>
+        <p><a class="gmail_link" href="mailto:raunakraj@gmail.com" >raunakraj74730@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="about_us_column">
+    <div class="about_us_card">
+      <img src="./assets/images/img01.jpg" alt="DEEPANSH KUMAR" style="width:100%">
+      <div class="about_us_container">
+        <h2>DEEPANSH KUMAR</h2>
+        <p class="about_us_title">Designer & Programmer</p>
+        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"> LNMCBM</a></p>
+        <p><a class="gmail_link" href="mailto:kumardeepansh210@gmail.com" >kumardeepansh210@gmail.com</a></p>      </div>
+    </div>
+  </div>
+    <div class="about_us_column">
+    <div class="about_us_card">
+      <img src="./assets/images/img01.jpg" alt="PARTH CHAUDHARY" style="width:100%">
+      <div class="about_us_container">
+        <h2>PARTH CHAUDHARY</h2>
+        <p class="about_us_title">Designer & Programmer</p>
+        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"> LNMCBM</a></p>
+        <p><a class="gmail_link" href="mailto:parth20102001@gmail.com" >parth20102001@gmail.com</a></p>      </div>
+    </div>
+  </div>
+</div>
+
+<!--Contact Us-->
+<div id="Contact" class="about_us_section">
+  <h1>Contact Us</h1>
+  <p>You want to contact us, below is our contact details.</p>
+  <p>(You can also contact our team members through mail by visiting <a id="About" href="#About" style="color: #008080;">"About Us !"</a> section)</p>
+</div>
+<div class="cu_container">
+  <div class="cu_content">
+    <div class="left-side">
+      <div class="address details">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="topic">Address:</div>
+        <div class="text-one">Muzaffarpur,</div>
+        <div class="text-two">Bihar,India</div>
+      </div>
+      <div class="phone details">
+        <i class="fas fa-phone-alt"></i>
+        <div class="topic">Phone:</div>
+        <div class="text-one">+918102623214</div>
+        <div class="text-two">+918102623214</div>
+      </div>
+      <div class="email details">
+        <i class="fa fa-envelope"></i>
+        <div class="topic">Email:</div>
+        <div class="text-one">alivetocode4@gmail.com</div>
+        <div class="text-two">info.alivetocode@gmail.com</div>
+      </div>
+    </div>
+    <div id="Query" class="right-side">
+      <div class="topic-text">Ask a question?</div>
+      <p>If you have any question or any type of query, you can message us here.</p>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your email">
+      </div>
+      <div class="input-box message-box">
+        <input type="text" placeholder="Enter your messege here...">
+      </div>
+      <div class="button">
+        <input type="button" value="Send Now" >
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+
+<div id="Follow_Us" class="about_us_section;" >
+  
+</div>
+<!--Footer-->
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <img src="./assets/gifs/AliveToCode Logo.gif" alt="AliveToCode">
+    <h3>AliveTo<span>Code</span></h3>
+
+    <p class="footer-links">
+      <a href="#Home">Home</a>
+      |
+      <a href="#About">About Us</a>
+      |
+      <a href="#Contact">Contact Us</a>
+      |
+      <a href="#Query">Query</a>
+    </p>
+
+    <p class="footer-company-name">© 2021 Alive To Code</p>
+    <p></p>
+    <p class="footer-company-name">Designed & developed by Raunak Raj, Deepansh Kumar,</p>
+    <p class="footer-company-name"> Parth Chaudhary, Sandeep Mazumdar</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p><span>Muzaffarpur, Bihar,</span>
+        Bharat(भारत)</p>
+        <p> </p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>Currently Unavailable</p>
+      <p> </p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="alivetocode4@gmail.com">alivetocode4@gmail.com</a></p>
+      <p> </p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>Social media links:</span>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
  
 <script src="./js/main.js"></script>
 </body>
