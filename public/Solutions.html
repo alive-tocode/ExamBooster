@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solutions</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(255, 255, 255);
+            display: initial;
+        }
+        p {
+            margin: 0px;
+        }
+        header {
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            background-color: rgb(137, 223, 0);
+            border-radius: 0px 0px 50px 50px ;
+            margin-bottom: 2px;            
+        }
+        li {
+            list-style: none;
+            margin: 10px 0px 10px 0px;
+        }
+        ul {
+            border-left: 4px solid black;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        .content_heading {
+            font-weight: bold;
+        }
+        #year_selector {
+            float: right;
+            position: sticky;
+            top: 0;
+            margin: 40px 48px 0px 0px;
+        }
+
+        .year_of_question {
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            background-color: rgba(0, 178, 248, 0.712);
+            border-radius: 15px;
+        }
+        #question_answers {
+            float: left;
+            width: 800px;
+            margin: 70px 0px 0px 250px;
+            
+        }
+        .each_year_question_answers {
+            padding: 10px 20px 20px 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            background-color: rgba(209, 219, 216, 0.137);
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        input+.drop+div {
+            display: none;
+        }
+        .drop:after {
+            margin: 20px;
+            content: "Show Answer";
+        }
+        :checked+.drop:after {
+            content: "Hide Answer";
+        }
+        input:checked + .drop + div {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>BCA Semester-4 Java Solutions</p>
+    </header>
+
+    <div id="year_selector">
+        <ul>
+            <li class="content_heading">Select Year</li>
+            <li><a href="#2020">2020</a></li>
+            <li><a href="#2019">2019</a></li>
+            <li><a href="#2018">2018</a></li>
+            <li><a href="#2017">2017</a></li>
+        </ul>
+    </div>
+
+    <section id="question_answers">
+        <!-- Each section for different year questions -->
+        <section class="each_year_question_answers" id="2020">
+            <div class="year_of_question">2020</div>
+            <div>
+                <input id="2020_Q1" type="checkbox" />
+                <label class="drop" for="2020_Q1">1. What is computer graphics?</label>
+                <div >
+                    <p><br>
+                        Graphics is defined as any sketch or a drawing or a special network that pictorially represents some meaningful information. Computer graphics deals with generating images with the aid of computers. The phrase was coined in 1960 by computer graphics researchers Verne Hudson and William Fetter of Boeing. It is the vast subject and area in the field of computer science. Computer graphics is used in UI design, computer animation, vector graphics, 3D modeling,GPU design, visualization, image processing, computational photography, scientific visualization, computational geometry, computer vision, etc. In most area the computer graphics in an abbreviation of CG. There are several tools used in the implementation of computer graphics. The basic is the <graphics.h> header file in Turbo-C, Unity for advanced and even OpenGL can be used for it's implementation.<br><br>
+
+                        Computer graphics refers to several different things:<br>
+                        - the representation and manipulation of image data by computer.<br>
+                        - the various technologies used to create and manipulate images.<br>
+                        - methods for digitally synthesizing and manipulating visual content.<br><br>
+
+                        Types of Computer Graphics -<br>
+                        1. Raster Graphics<br>
+                        2. Vector Graphics<br><br>
+
+                        1. Raster Graphics- In Raster Graphics, Raster images use bitmaps to store information. This means a large file needs a large bitmap. The larger the image, the more disk space the image will take up. As an example, a 640x480 image requires information to be stored for 307,200 pixels, while a 3072x2048 image needs to store information for 6,291,456 pixels. We use algorithms    which compress images to help reduce these file sizes. Image formats like jpeg and gif are comman compressed image formats. Scaling down these images is easy but enlarging a bitmap makes is pixelated or simply blurred. Hence, for images which need to be scaled to different sizes, we use vector graphics. File extenstions- .jpeg, .gif, .tif, .bmp, etc.<br><br>
+
+                            Applications of Raster Graphics:<br><br>
+
+                            1. Computer Displays- Most modern computers have bitmapped displays, where each on-screen pixel directly corresponds to a small number of bits in the memory. The screen is simply refreshed by scanning pixels according to each set of bits.<br>
+                            2. Image Storage- Most computer images are stored in raster graphics format, including gif, jpeg, and png, which are popular on the World Wide Web.<br>
+                            3. Geographic information systems- GIS data is commanly stored in a raster format to encode geographic data as the pixel values.<br><br>
+
+                        2. Vector Graphics- Making use of sequential commands or mathematical statements or programs which place lines or shapes in 2D or 3D environment is reffered to as Vector Graphics. Vector graphics are best for printing since it is composed of a series of mathematical curves. As a result, vector graphics print crisply even when they are enlarged. In physics: A vector is something which has a magnitude and direction. In vector graphics the file is created and saved as a sequence of vector statements. Rather than having a bit in a file for each bit of line drawing we use commands which describe series of points to be connected. As a result a much smaller file is obtained. File extenstions- .svg, .eps, .pdf, .ai, .dxf, etc<br><br>
+
+                            Applications of Vector Graphics:<br>
+                            1. Printing on paper or clothes- Vector Graphics is widely used in printing because printing has much higher resolution than what you see on a computer screen.<br>
+                            2. Animation- A lot of smooth animations and creative art you see in animated content online is done using vector images inside HTML5 or Adobe Flash Animations.<br><br>
+
+                        Application of Computer Graphics-<br><br>
+
+                        1. Computer Aided Design- Designing buildings, automobile, aircraft is done with the help of computer aided design, this helps providing minute details to the drawing and producing more accurate and sharp design with better specifications.<br>
+                        2. Computer Art- Using computer graphics we can create fine and commercial art which include animation packages, paint packages. These packages provide facilities for designing object shapes and specifying object motion. Cartoon drawing, painting, logo design can also be done.<br>
+                        3. Presentation Graphics- It is used to summarize financial, statistical, scientific or economic data.
+                        For example- Bar Chart, Line Chart.<br>
+                        4. Entertainment- Computer graphics finds a major part of its utility in the movie industry and game
+                        industry. Used for creating motion pictures, music video, telivision shows, cartoon animation films.<br>
+                        5. Education- Computer generated models are extremely useful for teaching huge number of concepts and
+                        fundamentals in an easy to understand and learn manner.<br>
+                        6. Training- Specialized system for training like simulators can be used for training the candidates in a
+                        way that can be grasped in a short span of time with better understanding. Creation of training modules
+                        using computer graphics is simple and very useful.<br>
+                        7. Visualization- Today the need of visualization can be seen in many advance technologies. Specially Data
+                        Visualization helps in finding insights of the data like trends and patterns which can be achieved through
+                        the proper use of computer graphics.<br>
+                        8. Image Processing- Various kinds of photographs or images require editing in order to be used in different
+                        places. Processing of existing images into refined ones for better interpretation in one of the many
+                        applications of computer graphics.<br>
+                        9. Machine Drawing- Computer graphics is very frequently used for designing, modifying and creation of
+                        various parts of machine, the main reasons behind using computer graphics for this purpose is the precision
+                        and clarity.<br>
+                        10. Graphical User Interface- The use of pictures, images, icons, pop-up menus, graphical objects helps in
+                        creating a user friendly environment where working is easy and pleasant.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="each_year_question_answers" id="2019">
+            <div class="year_of_question">2019</div>
+            <div>
+                <input id="2019_Q1" type="checkbox" />
+                <label class="drop" for="2019_Q1">1. What is computer graphics?</label>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="each_year_question_answers" id="2018">
+            <div class="year_of_question">2018</div>
+            <div>
+                <input id="2018_Q1" type="checkbox" />
+                <label class="drop" for="2018_Q1">1. What is computer graphics?</label>
+                <div>This is the answer.</div>
+            </div>
+        </section>
+
+        <section class="each_year_question_answers" id="2017">
+            <div class="year_of_question">2017</div>
+            <div>
+                <input id="2017_Q1" type="checkbox" />
+                <label class="drop" for="2017_Q1">1. What is computer graphics?</label>
+                <div>This is the answer.</div>
+            </div>
+        </section>
+
+
+    </section>
+</body>
+
+</html>
