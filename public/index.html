@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--To make components responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/Style.css">
+
+<!--For adding icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!--Header with sidepanel nav and logo-->
+<div class="top_section">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#"><i class="fa fa-home icon"></i>Home</a>
+    <a href="#"><i class="fa fa-user icon"></i>About Us</a>
+    <a href="#"><i class="fa fa-question-circle icon"></i>Query</a>
+    <a href="#"><i class="fa fa-envelope icon"></i>Contact Us</a>
+  </div>
+  <div>
+  <div id="companyLogo" class="company_logo_div">
+    <img class="company_logo" src="./assets/gifs/AliveToCode Logo.gif">
+    <h1 class="name_slogan">Alive To Code</h1>
+    <h6 class="name_slogan">SINCE BIRTH</h6>
+  </div> 
+
+  </div>
+
+</div>
+</div>
+<!--Adding three column cards in a row div-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="logos" src="./assets/images/pyqp_icon01.png">
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class="logos" src="./assets/images/notes_icon.png">
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class="logos" src="./assets/images/syllabus_icon.png">
+    </div>
+  </div>
+</div>
+ 
+<script src="./js/main.js"></script>
+</body>
+</html> 
