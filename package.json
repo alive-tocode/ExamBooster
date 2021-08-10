@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+
+
+
+ 
+
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,11 +17,16 @@
     "url": "git+https://github.com/alive-tocode/examjarvis.git"
   },
   "author": "",
+
+
+   
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alive-tocode/examjarvis/issues"
   },
   "homepage": "https://github.com/alive-tocode/examjarvis#readme",
+
+
   "dependencies": {
     "express": "^4.17.1"
   }
