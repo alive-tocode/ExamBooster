@@ -1,22 +1,28 @@
 {
   "name": "examjarvis",
   "version": "1.0.0",
-  "description": "",
+
+
   "main": "index.html",
   "scripts": {
-    " build": "",
+    "build": "",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alive-tocode/examjarvis.git).git"
+
+
+    "url": "git+https://github.com/alive-tocode/examjarvis.git"
   },
-  "author": "",
+  "author": "alive-tocode",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alive-tocode/examjarvis.git)/issues"
+    "url": "https://github.com/alive-tocode/examjarvis/issues"
   },
-  "homepage": "https://github.com/alive-tocode/examjarvis.git)#readme",
+  "homepage": "https://github.com/alive-tocode/examjarvis#readme",
+  "description": "",
+
   "dependencies": {
     "express": "^4.17.1"
   }
