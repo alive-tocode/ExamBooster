@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "build": ""
-  },
   "hosting": {
     "public": "public",
     "ignore": [
