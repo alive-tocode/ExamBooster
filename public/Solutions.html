@@ -13,6 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions</title>
     <style>
+        html {
+            font-size: 100%;
+        }
+        @media screen and (max-width:425px) {
+            html {
+                font-size: 55%;
+            }
+            
+        }
         body {
             margin: 0px;
             background-color: rgb(255, 255, 255);
@@ -22,19 +31,24 @@
             margin: 0px;
         }
         header {
-            padding: 10px;
+            padding: 0.62px;
             text-align: center;
-            font-size: 30px;
+            font-size: 2rem;
             background-color: rgb(137, 223, 0);
             border-radius: 0px 0px 50px 50px ;
             margin-bottom: 2px;            
         }
         li {
             list-style: none;
-            margin: 10px 0px 10px 0px;
+            /* display: inline; */
+            /* margin: 0.62rem 0rem 0.62rem 0rem; */
         }
         ul {
-            border-left: 4px solid black;
+            padding: 0px;
+            display: flex;
+            justify-content: space-evenly;
+            /* display: inline; */
+            /* border-left: 4px solid black; */
         }
         a {
             text-decoration: none;
@@ -44,29 +58,31 @@
             font-weight: bold;
         }
         #year_selector {
-            float: right;
+            /* float: right; */
             position: sticky;
-            top: 0;
-            margin: 40px 48px 0px 0px;
+            /* top: 0; */
+            margin: 2rem;
         }
 
         .year_of_question {
             font-weight: bold;
             text-align: center;
-            font-size: 40px;
-            margin-top: 20px;
+            font-size: 2.5rem;
+            margin-top: 1.25rem;
             margin-bottom: 15px;
             background-color: rgba(0, 178, 248, 0.712);
             border-radius: 15px;
         }
         #question_answers {
-            float: left;
-            width: 800px;
-            margin: 70px 0px 0px 250px;
-            
+            /* float: left; */
+            /* width: 50rem; */
+            display: block;
+            align-self: center;
+            margin: 2rem;
+            margin: 2vw
         }
         .each_year_question_answers {
-            padding: 10px 20px 20px 20px;
+            padding: 10px;
             border-radius: 15px;
             margin-bottom: 25px;
             background-color: rgba(209, 219, 216, 0.137);
@@ -79,10 +95,10 @@
         }
         .drop:after {
             margin: 20px;
-            content: "Show Answer";
+            content: "ShowAnswer";
         }
         :checked+.drop:after {
-            content: "Hide Answer";
+            content: "HideAnswer";
         }
         input:checked + .drop + div {
             display: block;
@@ -93,12 +109,12 @@
 
 <body>
     <header>
-        <p>BCA Semester-4 Java Solutions</p>
+        BCA Semester-4 Computer Graphics Solutions
     </header>
 
     <div id="year_selector">
         <ul>
-            <li class="content_heading">Select Year</li>
+            <!-- <li class="content_heading">Select Year</li> -->
             <li><a href="#2020">2020</a></li>
             <li><a href="#2019">2019</a></li>
             <li><a href="#2018">2018</a></li>
@@ -111,8 +127,11 @@
         <section class="each_year_question_answers" id="2020">
             <div class="year_of_question">2020</div>
             <div>
-                <input id="2020_Q1" type="checkbox" />
-                <label class="drop" for="2020_Q1">1. What is computer graphics?</label>
+                <input id="2020_Q1a" type="checkbox" />
+                <label class="drop" for="2020_Q1a">
+                    1a. What do you mean computer graphics ? Discuss its types and 
+                    application in detail with suitable example.
+                </label>
                 <div >
                     <p><br>
                         Graphics is defined as any sketch or a drawing or a special network that pictorially represents some meaningful information. Computer graphics deals with generating images with the aid of computers. The phrase was coined in 1960 by computer graphics researchers Verne Hudson and William Fetter of Boeing. It is the vast subject and area in the field of computer science. Computer graphics is used in UI design, computer animation, vector graphics, 3D modeling,GPU design, visualization, image processing, computational photography, scientific visualization, computational geometry, computer vision, etc. In most area the computer graphics in an abbreviation of CG. There are several tools used in the implementation of computer graphics. The basic is the <graphics.h> header file in Turbo-C, Unity for advanced and even OpenGL can be used for it's implementation.<br><br>
@@ -165,6 +184,79 @@
                         10. Graphical User Interface- The use of pictures, images, icons, pop-up menus, graphical objects helps in
                         creating a user friendly environment where working is easy and pleasant.
 
+                    </p>
+                </div>
+            </div>
+            <div>
+                <input id="2020_Q1b" type="checkbox" />
+                <label class="drop" for="2020_Q1b">1b. Define display devices. Discuss its type in detail.</label>
+                <div>
+                    <p>
+                        <br>
+                        The display device is an output device used to represent the information in the form of images.Display systems are mostly called a video monitor or Video display unit (VDU). Display devices are designed to model, view, or display information. The purpose of display technology is to simplify information sharing. Today, the demand for high-quality displays is increasing.<br><br>
+                        These are some display devices given below:<br><br>
+                        1. Cathode-Ray Tube(CRT)<br>
+                        2. Color CRT Monitor<br>
+                        3. Liquid crystal display(LCD)<br>
+                        4. Light Emitting Diode(LED)<br>
+                        5. Direct View Storage Tubes(DVST)<br>
+                        6. Plasma Display<br>
+                        7. 3D Display<br><br>
+                        1. Cathode-ray Tube (CRT): A cathode ray tube (CRT) is a specialized vacuum tube in which images are produced when an electron beam strikes a phosphorescent surface.It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. Most desktop computer displays make use of CRT for image displaying purposes. .<br><br>
+                        Construction of a CRT –  <br><br>
+                        1. The primary components are the heated metal cathode and a control grid.<br><br>
+                        2. The heat is supplied to the cathode (by passing current through the filament). This way the electrons get heated up and start getting ejected out of the cathode filament.<br><br>
+                        3. This stream of negatively charged electrons is accelerated towards the phosphor screen by supplying a high positive voltage.<br><br>
+                        4. This acceleration is generally produced by means of an accelerating anode.<br><br>
+                        5. Next component is the Focusing System, which is used to force the electron beam to converge to small spot on the screen. <br><br>
+                        6. If there will not be any focusing system, the electrons will be scattered because of their own repulsions and hence we won’t get a sharp image of the object. <br><br>
+                        7. This focusing can be either by means of electrostatic fields or magnetic fields. <br><br>
+
+                        There are two ways to display an object on the screen: <br><br>
+                        1. Raster Scan Display<br>
+                        2. Random Scan Display<br><br>
+
+                        1. Raster Scan Display- Raster Scan Displays are most common type of graphics monitor which employs CRT. It is based on television technology. In raster scan system electron beam sweeps across the screen, from top to bottom covering one row at a time.A pattern of illuminated pattern of spots is created by turning beam intensity on and off as it moves across each row. A memory area called refresh buffer or frame buffer stores picture definition. This memory area holds intensity values for all screen points. Stored intensity values are restored from frame buffer and painted on screen taking one row at a time.Each screen point is referred to as pixels.
+                        In raster scan systems refreshing is done at done at a rate of 60-80 frames per second. <br><br>
+                        ADVANTAGES: <br><br>
+                        1. Real life images with different shades can be displayed. <br>
+                        2. Color range available is bigger than random scan display. <br><br>
+                        DISADVANTAGES: <br><br>
+                        1. Resolution is lower than random scan display. <br>
+                        2. More memory is required. <br>
+                        3. Data about the intensities of all pixel has to be stored. <br><br>
+
+                        2. Random Scan Display- In Random-Scan Display electron beam is directed only to the ares of screen where a picture has to be drawn. It is also called vector displays, as it draws picture one line at time. It can draw and refresh component lines of a picture in any specified sequence. Pen plotter is an example of random-scan displays. The number of lines regulates refresh rate on random-scan displays. An area of memory called refresh display files stores picture definition as a set of line drawing commands. <br><br>
+                        ADVANTAGES: <br><br>
+                        1. Higher resolution as compared to raster scan display. <br>
+                        2. Produces smooth line drawing. <br>
+                        3. Less Memory required. <br><br>
+                        DISADVANTAGES: <br><br>
+                        1. Realistic images with different shades cannot be drawn. <br>
+                        2. Color limitations. <br><br>
+                        
+                        2. Color CRT Monitor: It is similar to a CRT monitor. The basic idea behind the color CRT monitor is to combine three basic colors- Red, Green, and Blue. By using these three colors, we can produce millions of different colors. <br><br>
+                        The two basic color display producing techniques are: <br><br>
+                        1. Beam–Penetration Method: It is used with a random scan monitor for displaying pictures. There are two phosphorus layers- Red and Green are coated inside the screen. The color shown depends on how far the electron beam penetrates the phosphorus surface. <br><br>
+                        2. Shadow–Mask Method: It is used with a raster scan monitor for displaying pictures. It has more range of color than the beam penetration method. It is used in television sets and monitors. <br><br>
+                        
+                        3. Liquid crystal display (LCD): The LCD depends upon the light modulating properties of liquid crystals. LCD is used in watches and portable computers. LCD requires an AC power supply instead of DC, so it is difficult to use it in circuits. It generally works on flat panel display technology. LCD consumes less power than LED. The LCD screen uses the liquid crystal to turn pixels on or off. Liquid Crystals are a mixture of solid and liquid. When the current flows inside it, its position changes into the desired color. <br><br>
+                        ADVANTAGES: <br><br>
+                        1. Produce a bright image. <br>
+                        2. Energy efficient. <br>
+                        3. Completely flat screen. <br><br>
+                        DISADVANTAGES: <br><br>
+                        1. Fixed aspect ratio & Resolution. <br>
+                        2. Lower Contrast. <br>
+                        3. More Expensive. <br><br>
+                        
+                        4. Light Emitting Diode (LED): LED is a device which emits when current passes through it. It is a semiconductor device. The size of the LED is small, so we can easily make any display unit by arranging a large number of LEDs. LED consumes more power compared to LCD. LED is used on TV, smartphones, motor vehicles, traffic light, etc. LEDs are powerful in structure, so they are capable of withstanding mechanical pressure. LED also works at high temperatures. <br><br>
+                        ADVANTAGES: <br><br>
+                        1. The Intensity of light can be controlled. <br>
+                        2. Low operational Voltage. <br>
+                        3. Capable of handling the high temperature. <br><br>
+                        DISADVANTAGES: <br><br>
+                        1. More Power Consuming than LCD. <br>
                     </p>
                 </div>
             </div>

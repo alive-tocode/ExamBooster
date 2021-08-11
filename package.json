@@ -1,6 +1,7 @@
 {
   "name": "examjarvis",
   "version": "1.0.0",
+
   "description": "",
   "main": "index.html",
   "scripts": {
@@ -11,12 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/alive-tocode/examjarvis.git"
   },
-  "author": "",
+  "author": "alive-tocode",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alive-tocode/examjarvis/issues"
   },
   "homepage": "https://github.com/alive-tocode/examjarvis#readme",
+  "description": "",
   "dependencies": {
     "express": "^4.17.1"
   }
