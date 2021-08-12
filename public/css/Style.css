@@ -70,8 +70,9 @@ button {
 }
 .top_section2{
   vertical-align: top;
-  left: 0;right: 0;
-  height: 32vh;
+  left: 0;
+  right: 0;
+  height: 7rem;
   width: 100%;
   background-color:#008080;
 
