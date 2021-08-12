@@ -4,7 +4,7 @@
 <head>
   <!--Title-->
   <title>
-    ExamJarvis
+    ExamJarvis|Main
   </title>
   <!--Favicon-->
   <link rel="icon" href="./assets/images/Exam Jarvis Icon.png" type="image/x-icon">
@@ -18,81 +18,63 @@
 </head>
 
 <body>
-<!-- mycomment -->
+  <!-- mycomment -->
+
+  <!--Header with sidepanel nav and logo-->
+  <div id="MyHome" class="top_section">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#Home" onclick="closeNav()"><i class="fa fa-home icon"></i>Home</a>
+      <a href="#About" onclick="closeNav()"><i class="fa fa-user icon"></i>About Us</a>
+      <a href="#Query" onclick="closeNav()"><i class="fa fa-question-circle icon"></i>Query</a>
+      <a href="#Contact" onclick="closeNav()"><i class="fa fa-envelope icon"></i>Contact Us</a>
+    </div>
 
 
 
-
-<!--Header with sidepanel nav and logo-->
-<div id="MyHome" class="top_section">
-  <button class="openbtn" onclick="openNav()">☰</button>  
-  <div id="mySidepanel" class="sidepanel">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#Home" onclick="closeNav()"><i class="fa fa-home icon"></i>Home</a>
-    <a href="#About" onclick="closeNav()"><i class="fa fa-user icon"></i>About Us</a>
-    <a href="#Query" onclick="closeNav()"><i class="fa fa-question-circle icon"></i>Query</a>
-    <a href="#Contact" onclick="closeNav()"><i class="fa fa-envelope icon"></i>Contact Us</a>
-  </div>
-
-    <div>
+    <div style="margin-top: 0;">
       <img src="./assets/gifs/Exam Jarvis Logo.gif" alt="AliveToCode"
         style="height: 15%;width: 15%;margin-left: auto;margin-right: auto;display: block;margin-top: -3%;">
     </div>
-
-   <div class="footer-center footer-distributed" style="background-color: transparent;margin-top: -3%;">
-    <h3 style="text-align: center;">Exam<span>Jarvis</span></h3>  
-    <h5 style="text-align: center;color: white;margin-top: 0%;">EXAM ASSISTANT</h5>
-   </div>
-</div>
-<!--Adding three column cards in a row div-->
-<div class="row">
-  <div class="column">
-    <div class="card" style="margin-top: auto;">
-      <img class="logos" src="./assets/images/pyqp_icon01.png">
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Previous Year Question Papers(PYQP)</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>BCA, MCA, BBA, MBA PYQP's available</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Papers are available with solution</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Solved papers 2020-2017</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>LNMCBM and BRABU papers only</h3>
-      <div>
-        <button class="button"><a href="./question.html">BCA PYQP's</a></button>
-      </div>
-      <div>
-        <button class="button">MCA PYQP's</button>
-      </div>
-      <div>
-        <button class="button">BBA PYQP's</button>
-      </div>
-      <div>
-        <button class="button">MBA PYQP's</button>
-      </div>
+    <div class="footer-center footer-distributed" style="background-color: transparent;margin-top: -3%;">
+      <h3 style="text-align: center;margin-top: 0%;">Exam<span>Jarvis</span></h3>
+      <h5 style="text-align: center;color: white;margin-top: 0%;">EXAM ASSISTANT</h5>
     </div>
   </div>
-  <div class="column">
-    <div class="card">
-      <img class="logos" src="./assets/images/notes_icon.png">
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes of different papers</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>for BCA, MCA, BBA, MBA available</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes are prepared to help</h3>
-      <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i class="fa fa-lightbulb-o  icon"></i>Notes can be downloaded</h3>
-      <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 10%;"> ..... </h3>
-      <div>
-        <button class="button" ><a href="./notes.html">BCA NOTES</a></button>
-      </div>
-      <div>
-        <button class="button">MCA NOTES</button>
-      </div>
-      <div>
-        <button class="button">BBA NOTES</button>
-      </div>
-      <div>
-        <button class="button">MBA NOTES</button>
+  <!--Adding three column cards in a row div-->
+  <div class="row">
+    <div class="column">
+      <div class="card" style="margin-top: auto;">
+        <img class="logos" src="./assets/images/pyqp_icon01.png">
+        <!-- <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+            class="fa fa-lightbulb-o  icon"></i>Previous Year Question Papers(PYQP)</h3>
+        <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+            class="fa fa-lightbulb-o  icon"></i>BCA, MCA, BBA, MBA PYQP's available</h3>
+        <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+            class="fa fa-lightbulb-o  icon"></i>Papers are available with solution</h3>
+        <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+            class="fa fa-lightbulb-o  icon"></i>Solved papers 2020-2017</h3>-->
+        <h4 style="color:rgb(41, 39, 39);text-align: start; padding-left: 14%;"><i
+            class="fa fa-lightbulb-o  icon"></i>LNMCBM Previous Year Question Papers</h4>
+        <div>
+          <button class="button"><a href="./pyqps.html">BCA PYQP's</a></button>
+        </div>
+        <div>
+          <button class="button"><a href="./pyqps.html">BBA PYQP's</a></button>
+        </div>
+        <div>
+          <button class="button"><a href="./pyqps.html">MCA PYQP's</a></button>
+        </div>
+        <div>
+          <button class="button"><a href="./pyqps.html">MBA PYQP's</a></button>
+        </div>
       </div>
     </div>
     <div class="column">
       <div class="card">
         <img class="logos" src="./assets/images/notes_icon.png">
-        <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+        <!-- <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>Notes of different papers</h3>
         <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>for BCA, MCA, BBA, MBA available</h3>
@@ -100,25 +82,27 @@
             class="fa fa-lightbulb-o  icon"></i>Notes are prepared to help</h3>
         <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>Notes can be downloaded</h3>
-        <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 10%;"> ..... </h3>
+        <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 10%;"> ..... </h3> -->
+        <h4 style="color:rgb(41, 39, 39);text-align: center; padding-left: 0%;"><i
+          class="fa fa-lightbulb-o  icon"></i>Notes</h4>
         <div>
-          <button class="button"><a href="./Solutions.html"></a>BCA NOTES</button>
+          <button class="button"><a href="./notes.html">BCA NOTES</a></button>
         </div>
         <div>
-          <button class="button">MCA NOTES</button>
+          <button class="button"><a href="./notes.html">BBA NOTES</a></button>
         </div>
         <div>
-          <button class="button">BBA NOTES</button>
+          <button class="button"><a href="./notes.html">MCA NOTES</a></button>
         </div>
         <div>
-          <button class="button">MBA NOTES</button>
+          <button class="button"><a href="./notes.html">MBA NOTES</a></button>
         </div>
       </div>
     </div>
     <div class="column">
       <div class="card">
         <img class="logos" src="./assets/images/syllabus_icon.png">
-        <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
+        <!-- <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>Syllabus</h3>
         <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>for BCA, MCA, BBA, MBA available</h3>
@@ -126,18 +110,20 @@
             class="fa fa-lightbulb-o  icon"></i>Syllabus is available as PDF</h3>
         <h3 style="color:rgb(31, 30, 30);text-align: start; padding-left: 16%;"><i
             class="fa fa-lightbulb-o  icon"></i>Syllabus can be downloaded</h3>
-        <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 16%;">......</h3>
+        <h3 style="color:rgb(241, 235, 235);text-align: start; padding-left: 16%;">......</h3> -->
+        <h4 style="color:rgb(41, 39, 39);text-align: center; padding-right:2%;"><i
+          class="fa fa-lightbulb-o  icon"></i>LNMCBM Syllabus</h4>
         <div>
-          <button class="button">BCA SYLLABUS</button>
+          <button class="button"><a href="./Syllabus.html">BCA SYLLABUS</a></button>
         </div>
         <div>
-          <button class="button">MCA SYLLABUS</button>
+          <button class="button"><a href="./Syllabus.html">BBA SYLLABUS</a></button>
         </div>
         <div>
-          <button class="button">BBA SYLLABUS</button>
+          <button class="button"><a href="./Syllabus.html">MCA SYLLABUS</a></button>
         </div>
         <div>
-          <button class="button">MBA SYLLABUS</button>
+          <button class="button"><a href="./Syllabus.html">MBA SYLLABUS</a></button>
         </div>
       </div>
     </div>
@@ -145,84 +131,100 @@
 
 
 
-
-<!--About Us Section-->
-<div id="About" class="about_us_section">
-  <h1>About Us</h1>
-  <h3>Welcome to Exam Jarvis by AliveToCode.</h3>
-  <p>AliveToCode is an organization formed by 'QuadTeam'.</p>
-  <p>This site is to provide the academic contents to BCA, MCA, BBA, MBA students studying in <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank">LNMCBM</a>  or  <a href="https://www.brabu.net/" style="color: #008080;text-decoration: solid;" target="_blank">BRABU</a></p>
+  <!--About Us Section-->
+  <div id="About" class="about_us_section">
+    <h1>About Us</h1>
+    <h3>Welcome to Exam Jarvis by AliveToCode.</h3>
+    <p>AliveToCode is an organization formed by 'QuadTeam'.</p>
+    <p>This site is to provide the academic contents to BCA, MCA, BBA, MBA students studying in <a
+        href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank">LNMCBM</a> or <a
+        href="https://www.brabu.net/" style="color: #008080;text-decoration: solid;" target="_blank">BRABU</a></p>
 
     <p></p>
   </div>
 
-
-<h2 style="text-align:center">Our QuadTeam</h2>
-<div class="about_us_row">
-  <div class="about_us_column">
-    <div class="about_us_card">
-      <img src="./assets/images/img01.jpg" alt="SANDEEP MAZUMDAR" style="width:100%">
-      <div class="about_us_container">
-        <h2>SANDEEP MAZUMDAR</h2>
-        <p class="about_us_title">Designer & Programmer</p>
-        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank"> LNMCBM</a></p>
-        <p><a class="gmail_link" href="mailto:sandeepmazumdar0@gmail.com" >sandeepmazumdar0@gmail.com</a></p>      </div>
-    </div>
-
-  <div class="about_us_column">
-    <div class="about_us_card">
-      <img src="./assets/images/img01.jpg" alt="RAUNAK RAJ" style="width:100%">
-      <div class="about_us_container">
-        <h2>RAUNAK RAJ</h2>
-        <p class="about_us_title">Designer & Programmer</p>
-        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank"> LNMCBM</a></p>
-        <p><a class="gmail_link" href="mailto:raunakraj@gmail.com" >raunakraj74730@gmail.com</a></p>
+  <h2 style="text-align:center">Our QuadTeam</h2>
+  <div  class="about_us_row">
+    <div class="about_us_column">
+      <div class="about_us_card">
+        <img src="./assets/images/img01.jpg" alt="SANDEEP MAZUMDAR" style="width:100%">
+        <div class="about_us_container">
+          <h2>SANDEEP MAZUMDAR</h2>
+          <p class="about_us_title">Designer & Programmer</p>
+          <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"
+              target="_blank"> LNMCBM</a></p>
+          <p><a class="gmail_link" href="mailto:sandeepmazumdar0@gmail.com">sandeepmazumdar0@gmail.com</a></p>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="about_us_column">
-    <div class="about_us_card">
-      <img src="./assets/images/img01.jpg" alt="DEEPANSH KUMAR" style="width:100%">
-      <div class="about_us_container">
-        <h2>DEEPANSH KUMAR</h2>
-        <p class="about_us_title">Designer & Programmer</p>
-        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank"> LNMCBM</a></p>
-        <p><a class="gmail_link" href="mailto:kumardeepansh210@gmail.com" >kumardeepansh210@gmail.com</a></p>      </div>
+
+    <div class="about_us_column">
+      <div class="about_us_card">
+        <img src="./assets/images/img01.jpg" alt="RAUNAK RAJ" style="width:100%">
+        <div class="about_us_container">
+          <h2>RAUNAK RAJ</h2>
+          <p class="about_us_title">Designer & Programmer</p>
+          <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"
+              target="_blank"> LNMCBM</a></p>
+          <p><a class="gmail_link" href="mailto:raunakraj@gmail.com">raunakraj74730@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about_us_column">
+      <div class="about_us_card">
+        <img src="./assets/images/img01.jpg" alt="DEEPANSH KUMAR" style="width:100%">
+        <div class="about_us_container">
+          <h2>DEEPANSH KUMAR</h2>
+          <p class="about_us_title">Designer & Programmer</p>
+          <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"
+              target="_blank"> LNMCBM</a></p>
+          <p><a class="gmail_link" href="mailto:kumardeepansh210@gmail.com">kumardeepansh210@gmail.com</a></p>
+        </div>
+      </div>
     </div>
     <div class="about_us_column">
-
-    <div class="about_us_card">
-      <img src="./assets/images/img01.jpg" alt="PARTH CHAUDHARY" style="width:100%">
-      <div class="about_us_container">
-        <h2>PARTH CHAUDHARY</h2>
-        <p class="about_us_title">Designer & Programmer</p>
-        <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;" target="_blank"> LNMCBM</a></p>
-        <p><a class="gmail_link" href="mailto:parth20102001@gmail.com" >parth20102001@gmail.com</a></p>      </div>
+      <div class="about_us_card">
+        <img src="./assets/images/img01.jpg" alt="PARTH CHAUDHARY" style="width:100%">
+        <div class="about_us_container">
+          <h2>PARTH CHAUDHARY</h2>
+          <p class="about_us_title">Designer & Programmer</p>
+          <p>BCA student at <a href="http://www.lnmcbm.org/" style="color: #008080;text-decoration: solid;"
+              target="_blank"> LNMCBM</a></p>
+          <p><a class="gmail_link" href="mailto:parth20102001@gmail.com">parth20102001@gmail.com</a></p>
+        </div>
+      </div>
     </div>
   </div>
 
-
-<!--Contact Us-->
-<div id="Contact" class="about_us_section">
-  <h1>Contact Us</h1>
-  <p>You want to contact us, below is our contact details.</p>
-  <p>(You can also contact our team members through mail by visiting <a id="About" href="#About" style="color: #008080;">"About Us !"</a> section)</p>
-</div>
-<div class="cu_container">
-  <div class="cu_content">
-    <div class="left-side">
-      <div class="address details">
-        <i class="fas fa-map-marker-alt"></i>
-        <div class="topic">Address:</div>
-        <div class="text-one">Muzaffarpur,</div>
-        <div class="text-two">Bihar,India</div>
-      </div>
-      <div class="phone details">
-        <i class="fas fa-phone-alt"></i>
-        <div class="topic">Phone:</div>
-        <div class="text-one">----------</div>
-        <div class="text-two">----------</div>
+  <!--Contact Us-->
+  <div id="Contact" class="about_us_section">
+    <h1>Contact Us</h1>
+    <p>You want to contact us, below is our contact details.</p>
+    <p>(You can also contact our team members through mail by visiting <a id="About" href="#About"
+        style="color: #008080;">"About Us !"</a> section)</p>
+  </div>
+  <div class="cu_container">
+    <div class="cu_content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address:</div>
+          <div class="text-one">Muzaffarpur,</div>
+          <div class="text-two">Bihar,India</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone:</div>
+          <div class="text-one">----------</div>
+          <div class="text-two">----------</div>
+        </div>
+        <div class="email details">
+          <i class="fa fa-envelope"></i>
+          <div class="topic">Email:</div>
+          <div class="text-one">alivetocode4@gmail.com</div>
+          <div class="text-two">info.alivetocode@gmail.com</div>
+        </div>
       </div>
       <div id="Query" class="right-side">
         <div class="topic-text">Ask a question?</div>
@@ -293,13 +295,20 @@
     <div class="footer-right">
       <p class="footer-company-about">
         <span>Social media links:</span>
+      </p>
       <div class="footer-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-youtube"></i></a>
       </div>
+      <p style="margin-top: 10%;" class="footer-company-about">
+        <span>Visitor's number:</span>
+      </p>
+      <div>
+        <img src="https://counter5.stat.ovh/private/freecounterstat.php?c=15c19e1sr8kxxckda6yfajfqlt4tjfec" border="0" title="web counters" alt="web counters">
+      </div>
+
     </div>
   </footer>
 
