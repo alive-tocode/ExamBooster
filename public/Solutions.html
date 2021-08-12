@@ -6,6 +6,12 @@
     <title>
         ExamJarvis|SOLUTIONS
     </title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
     <!--Favicon-->
     <link rel = "icon" href = "./assets/images/Exam Jarvis Icon.png"  type = "image/x-icon">
     <meta charset="UTF-8" />
@@ -14,6 +20,7 @@
     <title>Solutions</title>
     <style>
         html {
+            font-family: 'Baloo Bhai 2', cursive;
             font-size: 100%;
         }
         @media screen and (max-width:425px) {
@@ -34,9 +41,12 @@
             padding: 0.62px;
             text-align: center;
             font-size: 2rem;
-            background-color: rgb(137, 223, 0);
-            border-radius: 0px 0px 50px 50px ;
-            margin-bottom: 2px;            
+            background-color: rgba(0, 178, 248, 0.712);
+            border-radius: 0px 0px 30px 30px ;
+            margin-bottom: 2px;       
+            color: rgb(22, 32, 156);    
+            padding: 0.3rem 0rem;
+            font-weight: bold; 
         }
         li {
             list-style: none;
@@ -70,7 +80,8 @@
             font-size: 2.5rem;
             margin-top: 1.25rem;
             margin-bottom: 15px;
-            background-color: rgba(0, 178, 248, 0.712);
+            background-color: rgb(137, 223, 0);
+            color: rgb(4, 125, 4);
             border-radius: 15px;
         }
         #question_answers {
@@ -87,8 +98,15 @@
             margin-bottom: 25px;
             background-color: rgba(209, 219, 216, 0.137);
         }
+        .each_ques_ans {
+            margin: 1rem 0.5rem 0.5rem 0.5rem;
+            font-size: 1.2rem;
+        }
         input[type="checkbox"] {
             display: none;
+        }
+        .drop {
+
         }
         input+.drop+div {
             display: none;
@@ -102,6 +120,17 @@
         }
         input:checked + .drop + div {
             display: block;
+            /* background-color: white; */
+        }
+        input:checked+.drop+div {
+            background-color: white;
+        }
+        .answer {
+            margin: 0.5rem 0rem 0rem 0rem;
+            padding: 1.5rem 2rem;
+            border-radius: 2rem;
+            font-size: 100%;
+            line-height: 2rem;
         }
 
     </style>
@@ -126,14 +155,14 @@
         <!-- Each section for different year questions -->
         <section class="each_year_question_answers" id="2020">
             <div class="year_of_question">2020</div>
-            <div>
+            <div class="each_ques_ans">
                 <input id="2020_Q1a" type="checkbox" />
                 <label class="drop" for="2020_Q1a">
                     1a. What do you mean computer graphics ? Discuss its types and 
                     application in detail with suitable example.
                 </label>
-                <div >
-                    <p><br>
+                <div class="answer">
+                    <p>
                         Graphics is defined as any sketch or a drawing or a special network that pictorially represents some meaningful information. Computer graphics deals with generating images with the aid of computers. The phrase was coined in 1960 by computer graphics researchers Verne Hudson and William Fetter of Boeing. It is the vast subject and area in the field of computer science. Computer graphics is used in UI design, computer animation, vector graphics, 3D modeling,GPU design, visualization, image processing, computational photography, scientific visualization, computational geometry, computer vision, etc. In most area the computer graphics in an abbreviation of CG. There are several tools used in the implementation of computer graphics. The basic is the <graphics.h> header file in Turbo-C, Unity for advanced and even OpenGL can be used for it's implementation.<br><br>
 
                         Computer graphics refers to several different things:<br>
@@ -187,12 +216,11 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="each_ques_ans">
                 <input id="2020_Q1b" type="checkbox" />
                 <label class="drop" for="2020_Q1b">1b. Define display devices. Discuss its type in detail.</label>
-                <div>
+                <div class="answer">
                     <p>
-                        <br>
                         The display device is an output device used to represent the information in the form of images.Display systems are mostly called a video monitor or Video display unit (VDU). Display devices are designed to model, view, or display information. The purpose of display technology is to simplify information sharing. Today, the demand for high-quality displays is increasing.<br><br>
                         These are some display devices given below:<br><br>
                         1. Cathode-Ray Tube(CRT)<br>
