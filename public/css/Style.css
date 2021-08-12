@@ -1,10 +1,15 @@
-
+html {
+  font-size: 100%;
+}
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Baloo Bhai 2', cursive; 
     margin: 0px;
+    font-weight: bold;
   }
 
-
+button {
+  font-family: 'Baloo Bhai 2', cursive; 
+}
 
 .sidepanel  {
   width: 0;
@@ -20,9 +25,9 @@
 }
 
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
   text-decoration: solid;
-  font-size: 25px;
+  font-size: 1.56rem;
   color: black;
   display: block;
   transition: 0.2s;
@@ -38,27 +43,27 @@
   text-align: right;
   position: relative;
   padding-right: 2%;
-  font-size: 41px;
+  font-size: 2.56rem;
 }
 
 .openbtn {
-  font-size: 50px;
+  font-size: 3.12rem;
   cursor: pointer;
   background-color: #008080;
   color: white;
-  padding: 10px 15px;
+  padding: 0.62rem 0.93rem;
   border: none;
 }
 
 .openbtn:hover {
-  display: block;
+  display: inline;
   background-color:rgb(168, 158, 158);
 }
 
 
 .top_section{
   padding: 0;
-  height: 45vh;
+  height: 15rem;
   width: 100%;
   background-color:#008080;
 
@@ -85,14 +90,20 @@
 
 /* Float four columns side by side */
 .column {
-  float: left;
-  width: 33.33%;
+  
+  width: 23rem;
   margin-top: 10px;
   padding: 0 10px;
+  /* flex: 0 0 20rem; */
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -104,20 +115,19 @@
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  height: 50vh;
+  height: 28rem;
   text-align: center;
   background-color: rgb(241, 235, 235);
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}
+} */
 
 /*Logos*/
 .logos{
@@ -142,7 +152,7 @@
 
 
 .logo_border{
-  border: 2px black solid;
+  border: 0.125 black solid;
   margin: left 50%;;
 
 }
@@ -177,31 +187,31 @@
 
 /*About Card*/
 .about_card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   text-align: center;
   margin-top: 2%;
   width: 100%;
   height: 60vh;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .about_card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 0.125rem 1rem;
 }
 
  .abt_column {
   float: left;
   width: 25%;
-  margin-top: 10px;
-  padding: 0 10px;
+  margin-top: 0.62rem;
+  padding: 0 0.62rem;
 }
 
-.abt_row {margin: 0 -5px;}
+.abt_row {margin: 0 -0.31rem;}
 
 .abt_row:after {
   content: "";
@@ -210,8 +220,8 @@
 }
 
 .abt_card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 1rem;
   height: 50vh;
   margin-top: 10%;
   text-align: center;
@@ -237,27 +247,25 @@
 
 /* About Us Section*/
 .about_us_column {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  width: 20rem;
+  padding: 0;
 }
 .about_us_column2 {
   float: left;
   width: 100%;
   height: 60;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
 }
 
 .about_us_card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 50px;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  margin: 3.12rem;
 }
 
 
 .about_us_section {
-  padding: 50px;
+  padding: 3.12rem;
   margin-top: 2%;
   text-align: center;
   background-color: #474e5d;
@@ -265,7 +273,7 @@
 }
 
 .about_us_container {
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 .about_us_container::after, .about_us_row::after {
@@ -278,14 +286,13 @@
   color: grey;
 }
 
-
-
-@media screen and (max-width: 650px) {
-  .about_us_column {
-    width: 100%;
-    display: block;
-  }
+.about_us_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-evenly;
 }
+
 
 /* Gamail Links*/
 .gmail_link:link {
@@ -311,8 +318,8 @@
 .cu_container{
   width: 100%;
   background: #fff;
-  border-radius: 6px;
-  padding: 20px 60px 30px 40px;
+  border-radius: 0.37rem;
+  padding: 1.25rem 3.75rem 1.875rem 2.5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .cu_container .cu_content{
@@ -327,7 +334,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 0.93rem;
   position: relative;
 }
 .cu_content .left-side::before{
@@ -366,6 +373,9 @@
   font-size: 23px;
   font-weight: 600;
   color: #008080;
+}
+input {
+  font-family: 'Baloo Bhai 2', cursive; 
 }
 .right-side .input-box{
   height: 50px;
@@ -460,7 +470,7 @@ footer{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 16px 'Baloo Bhai 2', cursive;;
 	padding: 50px 50px 60px 50px;
 	margin-top: 80px;
 }
@@ -478,10 +488,11 @@ footer{
 	width: 30%;
 }
 
-.footer-distributed h3{
+.top_section h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
+	font: normal 2.6rem 'Baloo Bhai 2', cursive;;
+	margin: 0rem 0rem 0.5rem 0.5rem;
+  font-weight: bolder;
 }
 
 /*For Company Icon*/
@@ -507,7 +518,7 @@ footer{
 	width: 30%;
 }
 
-.footer-distributed h3 span{
+.top_section h3 span{
 	color:  #ecc65d;
 }
 
@@ -642,21 +653,31 @@ footer{
 	}
 
 }
+
+@media  screen and (max-width: 425px) {
+  html {
+    font-size: 70%;
+  }
+}
 /*BCA, MCA, BBA, MBA buttons*/
 .button {
   background-color: #008080;
   border: none;
   width: 80%;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 1.31rem;
   font-style: bold;
-  padding: 10px 20px;
+  padding: 0.62px 1.25rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 0.25rem 0.125rem;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 1rem;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*Logo slogon*/
