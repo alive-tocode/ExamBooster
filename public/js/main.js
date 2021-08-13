@@ -1,6 +1,6 @@
 function openNav() {
     document.getElementById("mySidepanel").style.width = "100%";
-    document.getElementById("mySidepanel").style.height = "50vh";
+    document.getElementById("mySidepanel").style.height = "45vh";
 
 
   }
@@ -20,3 +20,8 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+
+
+
+
