@@ -72,7 +72,7 @@ button {
   vertical-align: top;
   left: 0;
   right: 0;
-  height: 5rem;
+  height: 6.2rem;
   width: 100%;
   background-color:#008080;
 
@@ -91,7 +91,7 @@ button {
 
 /* Float four columns side by side */
 .column {
-  
+  margin: auto;
   width: 23rem;
   margin-top: 10px;
   padding: 0 10px;
@@ -248,6 +248,7 @@ button {
 
 /* About Us Section*/
 .about_us_column {
+  margin: auto;
   width: 20rem;
   padding: 0;
 }
