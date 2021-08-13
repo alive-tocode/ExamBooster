@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 
     <!--Favicon-->
-    <link rel = "icon" href = "./assets/images/Exam Jarvis Icon.png"  type = "image/x-icon">
+    <link rel="icon" href="./assets/images/Exam Jarvis Icon.png" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,36 +23,41 @@
             font-family: 'Baloo Bhai 2', cursive;
             font-size: 100%;
         }
+        
         @media screen and (max-width:425px) {
             html {
                 font-size: 70%;
             }
-            
         }
+        
         body {
             margin: 0px;
             background-color: rgb(255, 255, 255);
             display: initial;
         }
+        
         p {
             margin: 0px;
         }
+        
         header {
             /* padding: 0.62px; */
             text-align: center;
             font-size: 2rem;
             background-color: #008080;
-            border-radius: 0px 0px 30px 30px ;
-            margin-bottom: 2px;       
-            color: white;    
+            border-radius: 0px 0px 30px 30px;
+            margin-bottom: 2px;
+            color: white;
             padding: 0.3rem 0rem;
-            font-weight: bold; 
+            font-weight: bold;
         }
+        
         li {
             list-style: none;
             /* display: inline; */
             /* margin: 0.62rem 0rem 0.62rem 0rem; */
         }
+        
         ul {
             padding: 0px;
             display: flex;
@@ -61,6 +66,7 @@
             /* display: inline; */
             /* border-left: 4px solid black; */
         }
+        
         a {
             text-decoration: none;
         }
@@ -68,13 +74,14 @@
         .content_heading {
             font-weight: bold;
         }
+        
         #year_selector {
             /* float: right; */
             position: sticky;
             /* top: 0; */
             margin: 2rem;
         }
-
+        
         .year_of_question {
             font-weight: bold;
             text-align: center;
@@ -85,6 +92,7 @@
             color: white;
             border-radius: 15px;
         }
+        
         #question_answers {
             /* float: left; */
             /* width: 50rem; */
@@ -93,39 +101,47 @@
             margin: 2rem;
             margin: 2vw
         }
+        
         .each_year_question_answers {
             padding: 10px;
             border-radius: 15px;
             margin-bottom: 25px;
             background-color: #f1ebeb;
         }
+        
         .each_ques_ans {
             margin: 1rem 0.5rem 0.5rem 0.5rem;
             font-size: 1.2rem;
         }
+        
         input[type="checkbox"] {
             display: none;
         }
-        .drop {
-
-        }
+        
+        .drop {}
+        
         input+.drop+div {
             display: none;
         }
+        
         .drop:after {
             margin: 20px;
             content: "ShowAnswer";
         }
-        :checked+.drop:after {
+        
+         :checked+.drop:after {
             content: "HideAnswer";
         }
-        input:checked + .drop + div {
+        
+        input:checked+.drop+div {
             display: block;
             /* background-color: white; */
         }
+        
         input:checked+.drop+div {
             background-color: white;
         }
+        
         .answer {
             margin: 0.5rem 0rem 0rem 0rem;
             padding: 1.5rem 2rem;
@@ -133,7 +149,6 @@
             font-size: 100%;
             line-height: 2rem;
         }
-
     </style>
 </head>
 
@@ -164,55 +179,30 @@
                 </label>
                 <div class="answer">
                     <p>
-                        Graphics is defined as any sketch or a drawing or a special network that pictorially represents some meaningful information. Computer graphics deals with generating images with the aid of computers. The phrase was coined in 1960 by computer graphics researchers Verne Hudson and William Fetter of Boeing. It is the vast subject and area in the field of computer science. Computer graphics is used in UI design, computer animation, vector graphics, 3D modeling,GPU design, visualization, image processing, computational photography, scientific visualization, computational geometry, computer vision, etc. In most area the computer graphics in an abbreviation of CG. There are several tools used in the implementation of computer graphics. The basic is the <graphics.h> header file in Turbo-C, Unity for advanced and even OpenGL can be used for it's implementation.<br><br>
-
-                        Computer graphics refers to several different things:<br>
-                        - the representation and manipulation of image data by computer.<br>
-                        - the various technologies used to create and manipulate images.<br>
-                        - methods for digitally synthesizing and manipulating visual content.<br><br>
-
-                        Types of Computer Graphics -<br>
-                        1. Raster Graphics<br>
-                        2. Vector Graphics<br><br>
-
-                        1. Raster Graphics- In Raster Graphics, Raster images use bitmaps to store information. This means a large file needs a large bitmap. The larger the image, the more disk space the image will take up. As an example, a 640x480 image requires information to be stored for 307,200 pixels, while a 3072x2048 image needs to store information for 6,291,456 pixels. We use algorithms    which compress images to help reduce these file sizes. Image formats like jpeg and gif are comman compressed image formats. Scaling down these images is easy but enlarging a bitmap makes is pixelated or simply blurred. Hence, for images which need to be scaled to different sizes, we use vector graphics. File extenstions- .jpeg, .gif, .tif, .bmp, etc.<br><br>
-
-                            Applications of Raster Graphics:<br><br>
-
-                            1. Computer Displays- Most modern computers have bitmapped displays, where each on-screen pixel directly corresponds to a small number of bits in the memory. The screen is simply refreshed by scanning pixels according to each set of bits.<br>
-                            2. Image Storage- Most computer images are stored in raster graphics format, including gif, jpeg, and png, which are popular on the World Wide Web.<br>
-                            3. Geographic information systems- GIS data is commanly stored in a raster format to encode geographic data as the pixel values.<br><br>
-
-                        2. Vector Graphics- Making use of sequential commands or mathematical statements or programs which place lines or shapes in 2D or 3D environment is reffered to as Vector Graphics. Vector graphics are best for printing since it is composed of a series of mathematical curves. As a result, vector graphics print crisply even when they are enlarged. In physics: A vector is something which has a magnitude and direction. In vector graphics the file is created and saved as a sequence of vector statements. Rather than having a bit in a file for each bit of line drawing we use commands which describe series of points to be connected. As a result a much smaller file is obtained. File extenstions- .svg, .eps, .pdf, .ai, .dxf, etc<br><br>
-
-                            Applications of Vector Graphics:<br>
-                            1. Printing on paper or clothes- Vector Graphics is widely used in printing because printing has much higher resolution than what you see on a computer screen.<br>
-                            2. Animation- A lot of smooth animations and creative art you see in animated content online is done using vector images inside HTML5 or Adobe Flash Animations.<br><br>
-
-                        Application of Computer Graphics-<br><br>
-
-                        1. Computer Aided Design- Designing buildings, automobile, aircraft is done with the help of computer aided design, this helps providing minute details to the drawing and producing more accurate and sharp design with better specifications.<br>
-                        2. Computer Art- Using computer graphics we can create fine and commercial art which include animation packages, paint packages. These packages provide facilities for designing object shapes and specifying object motion. Cartoon drawing, painting, logo design can also be done.<br>
-                        3. Presentation Graphics- It is used to summarize financial, statistical, scientific or economic data.
-                        For example- Bar Chart, Line Chart.<br>
-                        4. Entertainment- Computer graphics finds a major part of its utility in the movie industry and game
-                        industry. Used for creating motion pictures, music video, telivision shows, cartoon animation films.<br>
-                        5. Education- Computer generated models are extremely useful for teaching huge number of concepts and
-                        fundamentals in an easy to understand and learn manner.<br>
-                        6. Training- Specialized system for training like simulators can be used for training the candidates in a
-                        way that can be grasped in a short span of time with better understanding. Creation of training modules
-                        using computer graphics is simple and very useful.<br>
-                        7. Visualization- Today the need of visualization can be seen in many advance technologies. Specially Data
-                        Visualization helps in finding insights of the data like trends and patterns which can be achieved through
-                        the proper use of computer graphics.<br>
-                        8. Image Processing- Various kinds of photographs or images require editing in order to be used in different
-                        places. Processing of existing images into refined ones for better interpretation in one of the many
-                        applications of computer graphics.<br>
-                        9. Machine Drawing- Computer graphics is very frequently used for designing, modifying and creation of
-                        various parts of machine, the main reasons behind using computer graphics for this purpose is the precision
-                        and clarity.<br>
-                        10. Graphical User Interface- The use of pictures, images, icons, pop-up menus, graphical objects helps in
-                        creating a user friendly environment where working is easy and pleasant.
+                        Graphics is defined as any sketch or a drawing or a special network that pictorially represents some meaningful information. Computer graphics deals with generating images with the aid of computers. The phrase was coined in 1960 by computer graphics researchers
+                        Verne Hudson and William Fetter of Boeing. It is the vast subject and area in the field of computer science. Computer graphics is used in UI design, computer animation, vector graphics, 3D modeling,GPU design, visualization, image
+                        processing, computational photography, scientific visualization, computational geometry, computer vision, etc. In most area the computer graphics in an abbreviation of CG. There are several tools used in the implementation of computer
+                        graphics. The basic is the
+                        <graphics.h> header file in Turbo-C, Unity for advanced and even OpenGL can be used for it's implementation.<br><br> Computer graphics refers to several different things:<br> - the representation and manipulation of image data by computer.<br>                            - the various technologies used to create and manipulate images.<br> - methods for digitally synthesizing and manipulating visual content.<br><br> Types of Computer Graphics -<br> 1. Raster Graphics<br> 2. Vector Graphics<br><br>                            1. Raster Graphics- In Raster Graphics, Raster images use bitmaps to store information. This means a large file needs a large bitmap. The larger the image, the more disk space the image will take up. As an example, a 640x480
+                            image requires information to be stored for 307,200 pixels, while a 3072x2048 image needs to store information for 6,291,456 pixels. We use algorithms which compress images to help reduce these file sizes. Image formats like
+                            jpeg and gif are comman compressed image formats. Scaling down these images is easy but enlarging a bitmap makes is pixelated or simply blurred. Hence, for images which need to be scaled to different sizes, we use vector graphics.
+                            File extenstions- .jpeg, .gif, .tif, .bmp, etc.<br><br> Applications of Raster Graphics:<br><br> 1. Computer Displays- Most modern computers have bitmapped displays, where each on-screen pixel directly corresponds to a small
+                            number of bits in the memory. The screen is simply refreshed by scanning pixels according to each set of bits.<br> 2. Image Storage- Most computer images are stored in raster graphics format, including gif, jpeg, and png, which
+                            are popular on the World Wide Web.<br> 3. Geographic information systems- GIS data is commanly stored in a raster format to encode geographic data as the pixel values.<br><br> 2. Vector Graphics- Making use of sequential commands
+                            or mathematical statements or programs which place lines or shapes in 2D or 3D environment is reffered to as Vector Graphics. Vector graphics are best for printing since it is composed of a series of mathematical curves. As
+                            a result, vector graphics print crisply even when they are enlarged. In physics: A vector is something which has a magnitude and direction. In vector graphics the file is created and saved as a sequence of vector statements.
+                            Rather than having a bit in a file for each bit of line drawing we use commands which describe series of points to be connected. As a result a much smaller file is obtained. File extenstions- .svg, .eps, .pdf, .ai, .dxf, etc<br><br>                            Applications of Vector Graphics:<br> 1. Printing on paper or clothes- Vector Graphics is widely used in printing because printing has much higher resolution than what you see on a computer screen.<br> 2. Animation- A lot of
+                            smooth animations and creative art you see in animated content online is done using vector images inside HTML5 or Adobe Flash Animations.<br><br> Application of Computer Graphics-<br><br> 1. Computer Aided Design- Designing
+                            buildings, automobile, aircraft is done with the help of computer aided design, this helps providing minute details to the drawing and producing more accurate and sharp design with better specifications.<br> 2. Computer Art-
+                            Using computer graphics we can create fine and commercial art which include animation packages, paint packages. These packages provide facilities for designing object shapes and specifying object motion. Cartoon drawing, painting,
+                            logo design can also be done.<br> 3. Presentation Graphics- It is used to summarize financial, statistical, scientific or economic data. For example- Bar Chart, Line Chart.<br> 4. Entertainment- Computer graphics finds a major
+                            part of its utility in the movie industry and game industry. Used for creating motion pictures, music video, telivision shows, cartoon animation films.<br> 5. Education- Computer generated models are extremely useful for teaching
+                            huge number of concepts and fundamentals in an easy to understand and learn manner.<br> 6. Training- Specialized system for training like simulators can be used for training the candidates in a way that can be grasped in a
+                            short span of time with better understanding. Creation of training modules using computer graphics is simple and very useful.<br> 7. Visualization- Today the need of visualization can be seen in many advance technologies. Specially
+                            Data Visualization helps in finding insights of the data like trends and patterns which can be achieved through the proper use of computer graphics.<br> 8. Image Processing- Various kinds of photographs or images require editing
+                            in order to be used in different places. Processing of existing images into refined ones for better interpretation in one of the many applications of computer graphics.<br> 9. Machine Drawing- Computer graphics is very frequently
+                            used for designing, modifying and creation of various parts of machine, the main reasons behind using computer graphics for this purpose is the precision and clarity.<br> 10. Graphical User Interface- The use of pictures, images,
+                            icons, pop-up menus, graphical objects helps in creating a user friendly environment where working is easy and pleasant.
 
                     </p>
                 </div>
@@ -222,70 +212,30 @@
                 <label class="drop" for="2020_Q1b">1b. Define display devices. Discuss its type in detail.</label>
                 <div class="answer">
                     <p>
-                        The display device is an output device used to represent the information in the form of images.Display systems are mostly called a video monitor or Video display unit (VDU). Display devices are designed to model, view, or display information. The purpose of display technology is to simplify information sharing. Today, the demand for high-quality displays is increasing.<br><br>
-                        These are some display devices given below:<br><br>
-                        1. Cathode-Ray Tube(CRT)<br>
-                        2. Color CRT Monitor<br>
-                        3. Liquid crystal display(LCD)<br>
-                        4. Light Emitting Diode(LED)<br>
-                        5. Direct View Storage Tubes(DVST)<br>
-                        6. Plasma Display<br>
-                        7. 3D Display<br><br>
-                        1. Cathode-ray Tube (CRT): A cathode ray tube (CRT) is a specialized vacuum tube in which images are produced when an electron beam strikes a phosphorescent surface.It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. Most desktop computer displays make use of CRT for image displaying purposes. .<br><br>
-                        Construction of a CRT –  <br><br>
-                        1. The primary components are the heated metal cathode and a control grid.<br><br>
-                        2. The heat is supplied to the cathode (by passing current through the filament). This way the electrons get heated up and start getting ejected out of the cathode filament.<br><br>
-                        3. This stream of negatively charged electrons is accelerated towards the phosphor screen by supplying a high positive voltage.<br><br>
-                        4. This acceleration is generally produced by means of an accelerating anode.<br><br>
-                        5. Next component is the Focusing System, which is used to force the electron beam to converge to small spot on the screen. <br><br>
-                        6. If there will not be any focusing system, the electrons will be scattered because of their own repulsions and hence we won’t get a sharp image of the object. <br><br>
-                        7. This focusing can be either by means of electrostatic fields or magnetic fields. <br><br>
-
-                        There are two ways to display an object on the screen: <br><br>
-                        1. Raster Scan Display<br>
-                        2. Random Scan Display<br><br>
-
-                        1. Raster Scan Display- Raster Scan Displays are most common type of graphics monitor which employs CRT. It is based on television technology. In raster scan system electron beam sweeps across the screen, from top to bottom covering one row at a time.A pattern of illuminated pattern of spots is created by turning beam intensity on and off as it moves across each row. A memory area called refresh buffer or frame buffer stores picture definition. This memory area holds intensity values for all screen points. Stored intensity values are restored from frame buffer and painted on screen taking one row at a time.Each screen point is referred to as pixels.
-                        In raster scan systems refreshing is done at done at a rate of 60-80 frames per second. <br><br>
-                        ADVANTAGES: <br><br>
-                        1. Real life images with different shades can be displayed. <br>
-                        2. Color range available is bigger than random scan display. <br><br>
-                        DISADVANTAGES: <br><br>
-                        1. Resolution is lower than random scan display. <br>
-                        2. More memory is required. <br>
-                        3. Data about the intensities of all pixel has to be stored. <br><br>
-
-                        2. Random Scan Display- In Random-Scan Display electron beam is directed only to the ares of screen where a picture has to be drawn. It is also called vector displays, as it draws picture one line at time. It can draw and refresh component lines of a picture in any specified sequence. Pen plotter is an example of random-scan displays. The number of lines regulates refresh rate on random-scan displays. An area of memory called refresh display files stores picture definition as a set of line drawing commands. <br><br>
-                        ADVANTAGES: <br><br>
-                        1. Higher resolution as compared to raster scan display. <br>
-                        2. Produces smooth line drawing. <br>
-                        3. Less Memory required. <br><br>
-                        DISADVANTAGES: <br><br>
-                        1. Realistic images with different shades cannot be drawn. <br>
-                        2. Color limitations. <br><br>
-                        
-                        2. Color CRT Monitor: It is similar to a CRT monitor. The basic idea behind the color CRT monitor is to combine three basic colors- Red, Green, and Blue. By using these three colors, we can produce millions of different colors. <br><br>
-                        The two basic color display producing techniques are: <br><br>
-                        1. Beam–Penetration Method: It is used with a random scan monitor for displaying pictures. There are two phosphorus layers- Red and Green are coated inside the screen. The color shown depends on how far the electron beam penetrates the phosphorus surface. <br><br>
-                        2. Shadow–Mask Method: It is used with a raster scan monitor for displaying pictures. It has more range of color than the beam penetration method. It is used in television sets and monitors. <br><br>
-                        
-                        3. Liquid crystal display (LCD): The LCD depends upon the light modulating properties of liquid crystals. LCD is used in watches and portable computers. LCD requires an AC power supply instead of DC, so it is difficult to use it in circuits. It generally works on flat panel display technology. LCD consumes less power than LED. The LCD screen uses the liquid crystal to turn pixels on or off. Liquid Crystals are a mixture of solid and liquid. When the current flows inside it, its position changes into the desired color. <br><br>
-                        ADVANTAGES: <br><br>
-                        1. Produce a bright image. <br>
-                        2. Energy efficient. <br>
-                        3. Completely flat screen. <br><br>
-                        DISADVANTAGES: <br><br>
-                        1. Fixed aspect ratio & Resolution. <br>
-                        2. Lower Contrast. <br>
-                        3. More Expensive. <br><br>
-                        
-                        4. Light Emitting Diode (LED): LED is a device which emits when current passes through it. It is a semiconductor device. The size of the LED is small, so we can easily make any display unit by arranging a large number of LEDs. LED consumes more power compared to LCD. LED is used on TV, smartphones, motor vehicles, traffic light, etc. LEDs are powerful in structure, so they are capable of withstanding mechanical pressure. LED also works at high temperatures. <br><br>
-                        ADVANTAGES: <br><br>
-                        1. The Intensity of light can be controlled. <br>
-                        2. Low operational Voltage. <br>
-                        3. Capable of handling the high temperature. <br><br>
-                        DISADVANTAGES: <br><br>
-                        1. More Power Consuming than LCD. <br>
+                        The display device is an output device used to represent the information in the form of images.Display systems are mostly called a video monitor or Video display unit (VDU). Display devices are designed to model, view, or display information. The purpose
+                        of display technology is to simplify information sharing. Today, the demand for high-quality displays is increasing.<br><br> These are some display devices given below:<br><br> 1. Cathode-Ray Tube(CRT)<br>                        2. Color CRT Monitor<br> 3. Liquid crystal display(LCD)<br> 4. Light Emitting Diode(LED)<br> 5. Direct View Storage Tubes(DVST)<br> 6. Plasma Display<br> 7. 3D Display<br><br> 1. Cathode-ray Tube (CRT): A cathode ray tube (CRT)
+                        is a specialized vacuum tube in which images are produced when an electron beam strikes a phosphorescent surface.It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. Most desktop computer
+                        displays make use of CRT for image displaying purposes. .<br><br> Construction of a CRT – <br><br> 1. The primary components are the heated metal cathode and a control grid.<br><br> 2. The heat is supplied to the cathode (by passing
+                        current through the filament). This way the electrons get heated up and start getting ejected out of the cathode filament.<br><br> 3. This stream of negatively charged electrons is accelerated towards the phosphor screen by supplying
+                        a high positive voltage.<br><br> 4. This acceleration is generally produced by means of an accelerating anode.<br><br> 5. Next component is the Focusing System, which is used to force the electron beam to converge to small spot
+                        on the screen. <br><br> 6. If there will not be any focusing system, the electrons will be scattered because of their own repulsions and hence we won’t get a sharp image of the object. <br><br> 7. This focusing can be either by
+                        means of electrostatic fields or magnetic fields. <br><br> There are two ways to display an object on the screen: <br><br> 1. Raster Scan Display<br> 2. Random Scan Display<br><br> 1. Raster Scan Display- Raster Scan Displays are
+                        most common type of graphics monitor which employs CRT. It is based on television technology. In raster scan system electron beam sweeps across the screen, from top to bottom covering one row at a time.A pattern of illuminated
+                        pattern of spots is created by turning beam intensity on and off as it moves across each row. A memory area called refresh buffer or frame buffer stores picture definition. This memory area holds intensity values for all screen
+                        points. Stored intensity values are restored from frame buffer and painted on screen taking one row at a time.Each screen point is referred to as pixels. In raster scan systems refreshing is done at done at a rate of 60-80 frames
+                        per second. <br><br> ADVANTAGES: <br><br> 1. Real life images with different shades can be displayed. <br> 2. Color range available is bigger than random scan display. <br><br> DISADVANTAGES: <br><br> 1. Resolution is lower than
+                        random scan display. <br> 2. More memory is required. <br> 3. Data about the intensities of all pixel has to be stored. <br><br> 2. Random Scan Display- In Random-Scan Display electron beam is directed only to the ares of screen
+                        where a picture has to be drawn. It is also called vector displays, as it draws picture one line at time. It can draw and refresh component lines of a picture in any specified sequence. Pen plotter is an example of random-scan
+                        displays. The number of lines regulates refresh rate on random-scan displays. An area of memory called refresh display files stores picture definition as a set of line drawing commands. <br><br> ADVANTAGES: <br><br> 1. Higher resolution
+                        as compared to raster scan display. <br> 2. Produces smooth line drawing. <br> 3. Less Memory required. <br><br> DISADVANTAGES: <br><br> 1. Realistic images with different shades cannot be drawn. <br> 2. Color limitations. <br><br>                        2. Color CRT Monitor: It is similar to a CRT monitor. The basic idea behind the color CRT monitor is to combine three basic colors- Red, Green, and Blue. By using these three colors, we can produce millions of different colors.
+                        <br><br> The two basic color display producing techniques are: <br><br> 1. Beam–Penetration Method: It is used with a random scan monitor for displaying pictures. There are two phosphorus layers- Red and Green are coated inside
+                        the screen. The color shown depends on how far the electron beam penetrates the phosphorus surface. <br><br> 2. Shadow–Mask Method: It is used with a raster scan monitor for displaying pictures. It has more range of color than
+                        the beam penetration method. It is used in television sets and monitors. <br><br> 3. Liquid crystal display (LCD): The LCD depends upon the light modulating properties of liquid crystals. LCD is used in watches and portable computers.
+                        LCD requires an AC power supply instead of DC, so it is difficult to use it in circuits. It generally works on flat panel display technology. LCD consumes less power than LED. The LCD screen uses the liquid crystal to turn pixels
+                        on or off. Liquid Crystals are a mixture of solid and liquid. When the current flows inside it, its position changes into the desired color. <br><br> ADVANTAGES: <br><br> 1. Produce a bright image. <br> 2. Energy efficient. <br>                        3. Completely flat screen. <br><br> DISADVANTAGES: <br><br> 1. Fixed aspect ratio & Resolution. <br> 2. Lower Contrast. <br> 3. More Expensive. <br><br> 4. Light Emitting Diode (LED): LED is a device which emits when current passes
+                        through it. It is a semiconductor device. The size of the LED is small, so we can easily make any display unit by arranging a large number of LEDs. LED consumes more power compared to LCD. LED is used on TV, smartphones, motor
+                        vehicles, traffic light, etc. LEDs are powerful in structure, so they are capable of withstanding mechanical pressure. LED also works at high temperatures. <br><br> ADVANTAGES: <br><br> 1. The Intensity of light can be controlled.
+                        <br> 2. Low operational Voltage. <br> 3. Capable of handling the high temperature. <br><br> DISADVANTAGES: <br><br> 1. More Power Consuming than LCD. <br>
                     </p>
                 </div>
             </div>
