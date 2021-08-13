@@ -100,7 +100,7 @@ button {
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
-  margin: 0 -5px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
