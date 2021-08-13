@@ -116,7 +116,7 @@ button {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  height: 28rem;
+  height: 22rem;
   text-align: center;
   background-color: rgb(241, 235, 235);
 }
@@ -490,7 +490,7 @@ footer{
 	width: 30%;
 }
 
-.top_section h3{
+.top_section h3, .footer-distributed .footer-left h3{
 	color:  #ffffff;
 	font: normal 2.6rem 'Baloo Bhai 2', cursive;;
 	margin: 0rem 0rem 0.5rem 0.5rem;
@@ -520,7 +520,7 @@ footer{
 	width: 30%;
 }
 
-.top_section h3 span{
+.top_section h3 span, .footer-distributed .footer-left h3 span{
 	color:  #ecc65d;
 }
 
