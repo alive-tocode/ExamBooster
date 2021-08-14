@@ -275,7 +275,9 @@ button {
 
 .about_us_card {
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-    margin: 3.12rem;
+    margin: O;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
 }
 
 .about_us_card2 {
