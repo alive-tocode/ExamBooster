@@ -168,13 +168,6 @@ button {
     ;
 }
 
-
-/*Company logo,name,slogan*/
-
-.logo_super {
-    /* border: 2px black solid; */
-}
-
 .logo_sub01 {
     width: 29%;
     height: 29%;
@@ -275,9 +268,9 @@ button {
 
 .about_us_card {
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-    margin: O;
-    margin-bottom: 5rem;
-    margin-top: 4rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about_us_card2 {
