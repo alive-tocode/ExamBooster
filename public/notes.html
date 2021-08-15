@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+
+    
+    <title>ExamJarvis|NOTES</title>
+    <style>
+        body{
+            /* background-color: #00ced1; */
+            margin: 0px;
+        }
+        html {
+            font-size: 100%;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        @media screen and (max-width:425px) {
+            html {
+                font-size: 70%;
+            }
+            
+        }
+        p {
+            margin: 0rem;
+        }
+        
+        header{
+            text-align: center;
+            background-color: #008080;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            border-radius: 0px 0px 30px 30px;
+            padding: 0.3rem 0rem;
+        }
+        li {
+            list-style: none;
+        }
+        ul {
+            padding: 0px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        .subject_name{
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            background-color: #008080;
+            color: white;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        iframe{
+            width: 100%;
+            height: 40rem;
+            border-radius: 15px;
+        }
+        section {
+            margin: 20px;
+        }
+        .subject_col {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .one_subject {
+            margin: 1rem;
+            padding: 1rem 2rem;
+            width: 30rem;
+            background-color: #f1ebeb;
+            border-radius: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>BCA Semester-4 Notes</p>
+    </header>
+
+    <div id="subject_selector">
+        <ul>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#computer_graphics">Computer Graphics</a></li>
+            <li><a href="#operating_system">Operating System</a></li>
+            <li><a href="#software_engineering">Software Engineering</a></li>
+        </ul>
+    </div>
+
+    <section class="subject_col">
+
+        <div class="one_subject" id="java">
+            <p class="subject_name">Java</p>
+            
+            <iframe id="iframepdf" src="" height="400" ></iframe>
+        </div>
+        
+        <div class="one_subject" id="computer_graphics">    
+            <p class="subject_name">Computer Graphics</p>
+            
+            <iframe src="https://drive.google.com/file/d/1FwOd8ioAxgOZdFc5AcCl-4MZVhzdCf-Q/preview" width="640" height="400" allow="autoplay"></iframe>
+        </div>
+        
+        <div class="one_subject" id="operating_system">
+            <p class="subject_name">Operating System</p>
+            
+            <iframe id="iframepdf" src="" height="400" ></iframe>
+        </div>
+        
+        <div class="one_subject" id="software_engineering">
+            <p class="subject_name">Software Engineering</p>
+            
+            <iframe id="iframepdf" src="" height="400"></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
