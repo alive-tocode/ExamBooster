@@ -55,17 +55,18 @@
 
     </div>
     <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: white;">
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester I">Sem I</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester II">Sem II</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III">Sem III</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester IV">Sem IV</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester V">Sem V</a></button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester I'); loadSem1pdf();", style="font-size: 1.2rem;"><a href="#Semester I">Sem I</a></button>
+        <button class="tablinks pill_button" id="default" , onclick="openSemester(event, 'Semester II'); loadSem2pdf();", style="font-size: 1.2rem;"><a href="#Semester II">Sem II</a></button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester III'); loadSem3pdf();", style="font-size: 1.2rem;"><a href="#Semester III">Sem III</a></button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester IV'); loadSem4pdf();", style="font-size: 1.2rem;"><a href="#Semester IV">Sem IV</a></button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester V'); loadSem5pdf();", style="font-size: 1.2rem;"><a href="#Semester V">Sem V</a></button>
     </div>
 
     <!--Semester wise pdf-->
 
     <!--Semester II-->
-    <div id="Semester II" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+<div id="Semester II" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
         <h1 style="margin: 0; ">Semester-II</h1>
         <p style="display:inline;">Solutions: </p>
         <button class="pill_button"><a href="">Discrete Mathematics</a></button>
@@ -82,7 +83,7 @@
                     <h2 style="margin: 0; display: inline;">BC-201</h2>
                     <p class="about_us_title" style="display: inline;">(Discrete Mathematics)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1OpufJrX2l4xheRawHhdhhMZaNrur17Tf/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem2pdf1", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -92,7 +93,7 @@
                     <h2 style="margin: 0; display: inline;">BC-202</h2>
                     <p class="about_us_title" style="display: inline;">(Computer Architecture)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1ZjtuRJQgZFh5zjOFRU5TzmSRfnE4C0At/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem2pdf2", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -102,7 +103,7 @@
                     <h2 style="margin: 0; display: inline;">BC-203</h2>
                     <p class="about_us_title" style="display: inline;">(Data Structure through C)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1BlL1KrEMyHI7bjP05bHChG9WCCm4eK_K/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem2pdf3", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -112,13 +113,15 @@
                     <h2 style="margin: 0; display: inline;">BC-204</h2>
                     <p class="about_us_title" style="display: inline;">(System Analysis and Disign)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/12gHukFA5JFb5RikNtz6PdJ6NJzGSVk5I/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem2pdf4", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
     </div>
+</div>
 
     <!--Semester III-->
-    <div id="Semester III" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+<div id="Semester III" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
         <h1 style="margin: 0; ">Semester-III</h1>
         <p style="display:inline;">Solutions: </p>
         <button class="pill_button"><a href="">FOM & BA</a></button>
@@ -135,7 +138,7 @@
                     <h2 style="margin: 0; display: inline;">BC-301</h2>
                     <p class="about_us_title" style="display: inline;">(Fundamentals of Management & Business Accounting)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1OtyUuOCdR7FPV7gzBfRbA3KfpIH5ijkA/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem3pdf1", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -145,7 +148,7 @@
                     <h2 style="margin: 0; display: inline;">BC-302</h2>
                     <p class="about_us_title" style="display: inline;">(Database Management System)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1mPHuKtTzxeyCCNcIUpKXiP30pcELEEV2/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem3pdf2", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -156,7 +159,7 @@
                     <h2 style="margin: 0; display: inline;">BC-303</h2>
                     <p class="about_us_title" style="display: inline;">(OOPs using C++)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1QEwlTY3hhhMCFO6Yg_s4afwpQPLCJsnf/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem3pdf3", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -166,13 +169,15 @@
                     <h2 style="margin: 0; display: inline;">BC-304</h2>
                     <p class="about_us_title" style="display: inline;">(Numerical Methodology)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1exCWfVe3LxJSN9knOq0ykI15CaUp3TBi/preview" width="100%" height="400px" allow="autoplay"></iframe>
+                <iframe id="sem3pdf4", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="400px" allow="autoplay"></iframe>
             </div>
         </div>
     </div>
+</div>
 
     <!--Semester IV-->
-    <div id="Semester IV" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+<div id="Semester IV" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
         <h1 style="margin: 0;">Semester-IV</h1>
         <p style="display:inline;">Solutions: </p>
         <button class="pill_button"><a href="">JAVA</a></button>
@@ -189,7 +194,7 @@
                     <h2 style="margin: 0; display: inline;">BC-401</h2>
                     <p class="about_us_title" style="display: inline;">(JAVA PROGRAMMING)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1KPeZinfMaA-Il9An0CMoN6U6t5lw2vVI/preview" width="100%" height="300px" allow="autoplay"></iframe>
+                <iframe id="sem4pdf1", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="300px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -199,7 +204,7 @@
                     <h2 style="margin: 0; display: inline;">BC-402</h2>
                     <p class="about_us_title" style="display: inline;">(Computer Graphics and Multimedia)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1SlNhvFFQMi0nJKR8qu9YsBnQGdwuzP5s/preview" width="100%" height="300px" allow="autoplay"></iframe>
+                <iframe id="sem4pdf2", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="300px" allow="autoplay"></iframe>
             </div>
         </div>
 
@@ -209,7 +214,7 @@
                     <h2 style="margin: 0; display: inline;">BC-403</h2>
                     <p class="about_us_title" style="display: inline;">(Operating System & Linux)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1f8Xz_ekdPsjlBUd4s52wtiusslR_-I1Z/preview" width="100%" height="300px allow=" autoplay "></iframe>                
+                <iframe id="sem4pdf3", style="height: 30rem;" , frameborder="0" , src="" width="100%" height="300px allow=" autoplay "></iframe>                
             </div>
         </div>
     
@@ -221,11 +226,11 @@
                     <h2 style="margin: 0; display: inline; ">BC-404</h2>
                     <p class="about_us_title " style="display: inline; ">(Software Engineering Principles)</p>
                 </div>
-                <iframe style="height: 30rem; ", frameborder="0 ", src="https://drive.google.com/file/d/1-VgGU6gre8ZrkwFhgmcjhP0a_03MGsGr/preview " width="100% " allow="autoplay "></iframe>
+                <iframe id="sem4pdf4", style="height: 30rem; ", frameborder="0 ", src="" width="100% " allow="autoplay "></iframe>
             </div>
         </div>
     </div>
-    
+</div>
 
 
     <!-- <div style="background-color: #008080; ">
@@ -304,7 +309,7 @@
 
         </div>
     </footer>
-    <script src="./js/main.js "></script>
+    <script src="./js/main.js"></script>
 
 
 </body>
