@@ -35,20 +35,20 @@
             <h1 style="color: #ECC65D;">BBA PYQP's OF LNMCBM</h1>
         </div>
     </div>
-    <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: white;">
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#SemI">Sem I</a></button>
-        <!-- <button class="pill_button" , style="font-size: 1.2rem;"><a href="">Sem II</a></button> -->
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#SemIII">Sem III</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#SemIV">Sem IV</a></button>
-        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#SemV">Sem V</a></button>
+    <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: #adadad;">
+        <button class="tablinks pill_button" id="myid" , onclick="openSemester(event, 'Semester I'); loadBbaSem1pdf();", style="font-size: 1.2rem;">Sem I</button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester II'); loadBbaSem2pdf();", style="font-size: 1.2rem;">Sem II</button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester III'); loadBbaSem3pdf();", style="font-size: 1.2rem;">Sem III</button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester IV'); loadBbaSem4pdf();", style="font-size: 1.2rem;">Sem IV</button>
+        <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester V'); loadBbaSem5pdf();", style="font-size: 1.2rem;">Sem V</button>
     </div>
 
 
     <!--Semester wise pdf-->
     <!--Semester I-->
-    <div id="SemI" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
-        <h1 style="margin: 0;">Semester-I</h1>
-        <!-- <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">Computer Applications in Management</a></button> <button class="pill_button"><a href="">Reseach Methodology</a></button> <button class="pill_button"><a href="">Management and Control of Costs</a></button> <button class="pill_button"><a href="">Entrepreneurship</a></button> <button class="pill_button"><a href="">Business Environment</a></button> -->
+<div id="Semester I" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 0 0 1rem 0;">
+    <h1 style="margin: 0;">Semester-I</h1>
     </div>
     <div class="about_us_row">
         <div class="about_us_column2">
@@ -58,7 +58,7 @@
                     <h2 style="margin: 0; display: inline;">Paper-1</h2>
                     <p class="about_us_title" style="display: inline;">(Business Mathematics)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1-3SD0Q1lzViByE_-YiulA-2CqppIde8H/preview" loading="lazy" width="100%" height="300px" allow="autoplay"></iframe>
+                <iframe id="bbasem1pdf1" style="height: 30rem;" , frameborder="0" , src="" loading="lazy" width="100%" height="300px" allow="autoplay"></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -66,7 +66,7 @@
                 <div class="about_us_container" , style="padding: 0.5rem;">
                     <h2 style="margin: 0; display: inline;">Paper-2</h2>
                     <p class="about_us_title" style="display: inline;">(Communicative English)</p>
-                </div> <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1fKM_jB2batHZ6ImIk0K9Juhp8A8gmsuG/preview" loading="lazy" width="100%" height="300px" allow="autoplay"></iframe>
+                </div> <iframe id="bbasem1pdf2" style="height: 30rem;" , frameborder="0" , src="" loading="lazy" width="100%" height="300px" allow="autoplay"></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -75,7 +75,7 @@
                     <h2 style="margin: 0; display: inline;">Paper-3</h2>
                     <p class="about_us_title" style="display: inline;">(Business Accounting)</p>
                 </div>
-                <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1gnoIVAi3cY2LqUiNmzxxAx3zdXWYOHkC/preview" loading="lazy" width="100%" height="300px allow=" autoplay "></iframe> 
+                <iframe id="bbasem1pdf3" style="height: 30rem;" , frameborder="0" , src="" loading="lazy" width="100%" height="300px allow=" autoplay "></iframe> 
             </div> 
         </div> 
         <div class="about_us_column2"> 
@@ -83,7 +83,7 @@
                 <div class="about_us_container", style=" padding: 0.5rem; "> 
                 <h2 style=" margin: 0; display:inline; ">Paper-4</h2> 
                 <p class=" about_us_title " style=" display:inline; ">(Business Economics)</p> 
-                </div> <iframe style=" height:30rem; ", frameborder=" 0 ", src="https://drive.google.com/file/d/1Zp6k_P5FxGIx9edhfkRJtOyRTBQOmpyr/preview" loading="lazy " width="100% " allow=" autoplay "></iframe> 
+                </div> <iframe id="bbasem1pdf4" style=" height:30rem; ", frameborder=" 0 ", src="" loading="lazy " width="100% " allow=" autoplay "></iframe> 
             </div> 
         </div> 
         <div class="about_us_column2"> 
@@ -91,15 +91,20 @@
                 <div class="about_us_container", style=" padding: 0.5rem; "> 
                 <h2 style=" margin: 0; display:inline; ">Paper-5</h2> 
                 <p class=" about_us_title " style=" display:inline; ">(Business & Industrial Organisation)</p> 
-                </div> <iframe style=" height:30rem; ", frameborder=" 0 ", src="https://drive.google.com/file/d/1ZtO4BiXnBZZwjlItwZadxzOX9t-GADfj/preview" loading="lazy " width="100% " allow=" autoplay "></iframe> 
+                </div> <iframe id="bbasem1pdf5" style=" height:30rem; ", frameborder=" 0 ", src="" loading="lazy " width="100% " allow=" autoplay "></iframe> 
             </div> 
         </div> 
+    </div>
+</div>
+    <!--Semesger II-->
+    <div id="Semester II" class="tabContent">
+
     </div>
 
    
   <!--Semester III-->
-  
-  <div id="SemIII" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0; ">
+<div id="Semester III" class="tabContent">
+  <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; ">
     <h1 style="margin: 0; ">Semester-III</h1>
   </div>
     <div class="about_us_row">
@@ -110,7 +115,7 @@
                 <h2 style="margin: 0; display: inline; ">Paper-1</h2>
                 <p class="about_us_title" style="display: inline; ">(Materials & Production Management)</p>
             </div>
-            <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/15DpXWzku-CKcWOqGTZzbiBR95wmRzymj/preview" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+            <iframe id="bbasem3pdf1" style="height: 30rem; " , frameborder="0 " , src="" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -119,7 +124,7 @@
                 <h2 style="margin: 0; display: inline; ">Paper-2</h2>
                 <p class="about_us_title " style="display: inline; ">(Human Resource Management)</p>
             </div> 
-            <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/1GXHZThgxcmAZgA8YlQ5ZuNkbdZOcvG0m/preview"  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+            <iframe id="bbasem3pdf2" style="height: 30rem; " , frameborder="0 " , src=""  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
 
 
             </div>
@@ -130,7 +135,7 @@
                 <h2 style="margin: 0; display: inline; ">Paper-3</h2>
                 <p class="about_us_title" style="display: inline; ">(Marketing Management)</p>
             </div>
-            <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/1KOGrVmnjdvGlLa2iUYXJeD8QeF21ObUS/preview"  loading="lazy " width="100% " height="300px" allow="autoplay"></iframe>
+            <iframe id="bbasem3pdf3" style="height: 30rem; " , frameborder="0 " , src=""  loading="lazy " width="100% " height="300px" allow="autoplay"></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -138,7 +143,7 @@
                 <div class="about_us_container" , style=" padding: 0.5rem; ">
                     <h2 style=" margin: 0; display:inline; ">Paper-4</h2>
                     <p class=" about_us_title " style=" display:inline; ">(Financial Management)</p>
-                </div> <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1GjRc-W7EG6oA07XjLdldau4NCqm8ctIe/preview" loading="lazy " width="100% " allow=" autoplay "></iframe>
+                </div> <iframe id="bbasem3pdf4" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy " width="100% " allow=" autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -147,13 +152,15 @@
                     <h2 style=" margin: 0; display:inline; ">Paper-5</h2>
                     <p class=" about_us_title " style=" display:inline; ">(Legal Aspects of Business)</p>
                 </div> 
-                <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1PXc6fGLygUTo8U_6CqLS_ej25G7z-9L3/preview" loading="lazy " width="100% " allow=" autoplay "></iframe>
+                <iframe id="bbasem3pdf5" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy " width="100% " allow=" autoplay "></iframe>
             </div>
         </div>
     </div>
+</div>
 
     <!--Semester IV-->
-    <div id="SemIV" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0; ">
+<div id="Semester IV" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; ">
         <h1 style="margin: 0; ">Semester-IV</h1>
     </div>
     <div class="about_us_row ">
@@ -163,7 +170,7 @@
                 <div class="about_us_container " , style="padding: 0.5rem; ">
                     <h2 style="margin: 0; display: inline; ">Paper-1</h2>
                     <p class="about_us_title " style="display: inline; ">(Computer Applications in Management)</p>
-                </div> <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/1KPeZinfMaA-Il9An0CMoN6U6t5lw2vVI/preview" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+                </div> <iframe id="bbasem4pdf1" style="height: 30rem; " , frameborder="0 " , src="" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -171,7 +178,7 @@
                 <div class="about_us_container " , style="padding: 0.5rem; ">
                     <h2 style="margin: 0; display: inline; ">Paper-2</h2>
                     <p class="about_us_title " style="display: inline; ">(Reseach Methodology)</p>
-                </div> <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/1Jaw6AFN0vZA8dCbhS4fbcHnuVc0YYYKh/preview" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+                </div> <iframe id="bbasem4pdf2" style="height: 30rem; " , frameborder="0 " , src="" loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -180,7 +187,7 @@
                     <h2 style="margin: 0; display: inline; ">Paper-3</h2>
                     <p class="about_us_title" style="display: inline; ">(Management & Control of Costs)</p>
                 </div>
-                <iframe style="height: 30rem; " , frameborder="0" , src="https://drive.google.com/file/d/1Oydyhwb9p4gusdG8xsm44TjFz5-ncuLO/preview" loading="lazy " width="100% " height="300px allow=" autoplay "></iframe>
+                <iframe id="bbasem4pdf3" style="height: 30rem; " , frameborder="0" , src="" loading="lazy " width="100% " height="300px allow=" autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -188,7 +195,7 @@
                 <div class="about_us_container" , style=" padding: 0.5rem; ">
                     <h2 style=" margin: 0; display:inline; ">Paper-4</h2>
                     <p class="about_us_title" style=" display:inline; ">(Entrepreneurship)</p>
-                </div> <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1D8Z_6GQlbls-llJs5lmp30WHbgwkrzm9/preview" loading="lazy " width="100% " allow=" autoplay "></iframe>
+                </div> <iframe id="bbasem4pdf4" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy " width="100% " allow=" autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -196,13 +203,15 @@
                 <div class="about_us_container " , style=" padding: 0.5rem; ">
                     <h2 style=" margin: 0; display:inline; ">Paper-5</h2>
                     <p class="about_us_title" style=" display:inline; ">(Business Environment)</p>
-                </div> <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1q93D6-ug4TZnX4D67WEHluGEBzmrH1wa/preview" loading="lazy " width="100% " allow=" autoplay "></iframe>
+                </div> <iframe id="bbasem4pdf5" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy " width="100% " allow=" autoplay "></iframe>
             </div>
         </div>
     </div>
+</div>
 
     <!--Semester V-->
-    <div id="SemV" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0; ">
+<div id="Semester V" class="tabContent">
+    <div class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; ">
         <h1 style="margin: 0; ">Semester-V</h1>
     </div>
     <div class="about_us_row">
@@ -213,7 +222,7 @@
                     <h2 style="margin: 0; display: inline; ">Paper-1</h2>
                     <p class="about_us_title" style="display: inline; ">(Corporate Taxation)</p>
                 </div>
-                <iframe style="height: 30rem; " , frameborder="0" , src="https://drive.google.com/file/d/1SeXrujigZI5gx2ULGq5-m1nf2CnIMjxd/preview"  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+                <iframe id="bbasem5pdf1" style="height: 30rem; " , frameborder="0" , src=""  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -221,7 +230,7 @@
                 <div class="about_us_container" , style="padding: 0.5rem; ">
                     <h2 style="margin: 0; display: inline; ">Paper-2</h2>
                     <p class="about_us_title " style="display: inline; ">(Business Values & Ethics)</p>
-                </div> <iframe style="height: 30rem; " , frameborder="0 " , src="https://drive.google.com/file/d/1WKO8IjLlasnh78RoMl_FtxaCKuduM4Sn/preview"  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
+                </div> <iframe id="bbasem5pdf2" style="height: 30rem; " , frameborder="0 " , src=""  loading="lazy " width="100% " height="300px " allow="autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -230,7 +239,7 @@
                     <h2 style="margin: 0; display: inline; ">Paper-3</h2>
                     <p class="about_us_title " style="display: inline; ">Fundamentals of Operation Research)</p>
                 </div>
-                <iframe style="height: 30rem; " , frameborder="0" , src="https://drive.google.com/file/d/1p68lyjFPan9_8U_yBvXn47wCmTfpr3rv/preview" loading="lazy " width="100% " height="300px allow=" autoplay "></iframe>
+                <iframe id="bbasem5pdf3" style="height: 30rem; " , frameborder="0" , src="" loading="lazy " width="100% " height="300px allow=" autoplay "></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -238,7 +247,7 @@
                 <div class="about_us_container " , style=" padding: 0.5rem; ">
                     <h2 style=" margin: 0; display:inline; ">Paper-4</h2>
                     <p class=" about_us_title " style=" display:inline; ">(Management Control Techniques)</p>
-                </div> <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1Tqk-vArKD8_-r96vSKB-k3az8ZA13WpR/preview" loading="lazy " width="100%" allow="autoplay"></iframe>
+                </div> <iframe id="bbasem5pdf4" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy " width="100%" allow="autoplay"></iframe>
             </div>
         </div>
         <div class="about_us_column2">
@@ -246,10 +255,12 @@
                 <div class="about_us_container " , style=" padding: 0.5rem; ">
                     <h2 style=" margin: 0; display:inline; ">Paper-5</h2>
                     <p class="about_us_title" style=" display:inline; ">(Management Information System)</p>
-                </div> <iframe style=" height:30rem; " , frameborder=" 0 " , src="https://drive.google.com/file/d/1hUOaBlkvkwK8dFp6q9E87s4w8Ra7aXQJ/preview" loading="lazy" width="100%" allow="autoplay"></iframe>
+                </div> <iframe id="bbasem5pdf5" style=" height:30rem; " , frameborder=" 0 " , src="" loading="lazy" width="100%" allow="autoplay"></iframe>
             </div>
         </div>
     </div>
+</div>
+
     <footer class="footer-distributed">
         <div class="footer-left"> <img src="./assets/gifs/Exam Jarvis Logo.gif" alt="Exam Jarvis">
             <h3>Exam<span>Jarvis</span></h3>
@@ -283,6 +294,9 @@
     </footer>
     <script src="./js/main.js">
     </script>
+    <script src="./js/mains.js">
+    </script>
+
 </body>
 
 </html>
