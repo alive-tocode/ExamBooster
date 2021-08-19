@@ -53,7 +53,7 @@
     </div>
     <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: #adadad;">
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester I'); loadBcaSem1pdf();", style="font-size: 1.2rem;">Sem I</button>
-        <button class="tablinks pill_button" id="default" , onclick="openSemester(event, 'Semester II'); loadBcaSem2pdf();", style="font-size: 1.2rem;">Sem II</button>
+        <button class="tablinks pill_button" id="clickbcasem2" , onclick="openSemester(event, 'Semester II'); loadBcaSem2pdf();", style="font-size: 1.2rem;">Sem II</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester III'); loadBcaSem3pdf();", style="font-size: 1.2rem;">Sem III</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester IV'); loadBcaSem4pdf();", style="font-size: 1.2rem;">Sem IV</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester V'); loadBcaSem5pdf();", style="font-size: 1.2rem;">Sem V</button>
@@ -418,7 +418,10 @@
         </div>
     </footer>
     <script src="./js/main.js"></script>
-
+    <script>
+        document.getElementById("clickbcasem2").click();
+        document.getElementById("clickbcasem2").classList.add("active");
+    </script>
 
 </body>
 

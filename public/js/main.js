@@ -21,8 +21,6 @@ function typeWriter() {
     }
 }
 
-document.getElementById("default").click();
-document.getElementById("default").classList.add("active");
 
 //Functions to load pdf of each semester(Bca) by adding link to the iframes
 function loadBcaSem1pdf() {
@@ -108,6 +106,54 @@ function loadBbaSem5pdf() {
     }
 }
 
+//Functions to load pdf of each semester(Mca) by adding link to the iframes
+function loadMcaSem1pdf() {
+    if(document.getElementById("mcasem1pdf2").contentWindow.location.href!="https://drive.google.com/file/d/1EhwX19HykbyYx484CrKtGzo3a8cF9__p/preview") {
+    // document.getElementById("mcasem1pdf1").src="";
+    document.getElementById("mcasem1pdf2").src="https://drive.google.com/file/d/1EhwX19HykbyYx484CrKtGzo3a8cF9__p/preview";
+    document.getElementById("mcasem1pdf3").src="https://drive.google.com/file/d/1EftmFpXvwfkallBw3qWaNyUfTB8OhXLj/preview";
+    document.getElementById("mcasem1pdf4").src="https://drive.google.com/file/d/1EeAtoZpaYeBviPizIwrjC-iMIn8N_bFR/preview";
+    document.getElementById("mcasem1pdf5").src="https://drive.google.com/file/d/1Ecsl87MRefQ81hQh0sjS1NWzkT7v-lSi/preview";
+    }
+}
+function loadMcaSem2pdf() {
+    if(document.getElementById("mcasem2pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1D7yWD4ImGYspGz3AKgnVz8DkMFfkh60a/preview") {
+        document.getElementById("mcasem2pdf1").src="https://drive.google.com/file/d/1D7yWD4ImGYspGz3AKgnVz8DkMFfkh60a/preview";
+        document.getElementById("mcasem2pdf2").src="https://drive.google.com/file/d/1DFanxEkW2jSeHXDP6f1wVXvqkTd7d9ur/preview";
+        document.getElementById("mcasem2pdf3").src="https://drive.google.com/file/d/1DJ5stygfcitgPy4zxyBxBoarEEmlbCr7/preview";
+        document.getElementById("mcasem2pdf4").src="https://drive.google.com/file/d/1DX9WcMno1KNp6QS97jllZlPbUFU5nIpZ/preview";
+        document.getElementById("mcasem2pdf5").src="https://drive.google.com/file/d/1DPyWVQ9GOMcyxqDTJG_XQc9bZsFcM2rq/preview";
+    }
+}
+function loadMcaSem3pdf() {
+    if(document.getElementById("mcasem3pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview") {
+        document.getElementById("mcasem3pdf1").src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview";
+        document.getElementById("mcasem3pdf2").src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview";
+        document.getElementById("mcasem3pdf3").src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview";
+        document.getElementById("mcasem3pdf4").src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview";
+        document.getElementById("mcasem3pdf5").src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview";
+    }
+}
+function loadMcaSem4pdf() {
+    if(document.getElementById("mcasem4pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview") {
+        document.getElementById("mcasem4pdf1").src="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview";
+        document.getElementById("mcasem4pdf2").src="https://drive.google.com/file/d/1ED5zx2pdTQDVELWiFjYLIeS--oh8DGsH/preview";
+        document.getElementById("mcasem4pdf3").src="https://drive.google.com/file/d/1EH3u3SNNPSKUZ5DN7JtABVDc9wi54pVA/preview";
+        document.getElementById("mcasem4pdf4").src="https://drive.google.com/file/d/1E1Q7fscpYEqsFvEbOxnsB6fJdINDKYTz/preview";
+        document.getElementById("mcasem4pdf5").src="https://drive.google.com/file/d/1E3WH98kfMNO_d2meDZbPBCWeW4ic0hOb/preview";
+    }
+}
+function loadMcaSem5pdf() {
+    if(document.getElementById("mcasem5pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1EX-jVvDGR0Y7ceEnT3nLbT2GDxU6judo/preview") {
+        document.getElementById("mcasem5pdf1").src="https://drive.google.com/file/d/1EX-jVvDGR0Y7ceEnT3nLbT2GDxU6judo/preview";
+        document.getElementById("mcasem5pdf2").src="https://drive.google.com/file/d/1EOuzHTjZkRRcagaqoHmCJX-RpD2oQQhH/preview";
+        document.getElementById("mcasem5pdf3").src="https://drive.google.com/file/d/1EZVHfRZOCDBuF2BAfOo673TYmVY9DfSs/preview";
+        document.getElementById("mcasem5pdf4").src="https://drive.google.com/file/d/1EacF2K6Nf4bxflMxSpx4q5IQG3goLx33/preview";
+        document.getElementById("mcasem5pdf5").src="https://drive.google.com/file/d/1EcTbFieLSVrR9hy45pUuzplS65Uu7now/preview";
+    }
+}
+
+//Function to change active tab according to user clicks
 function openSemester(evt, semester) {
     var i, tabcontent, tablinks;
 

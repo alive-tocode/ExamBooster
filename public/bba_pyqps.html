@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: #adadad;">
-        <button class="tablinks pill_button" id="myid" , onclick="openSemester(event, 'Semester I'); loadBbaSem1pdf();", style="font-size: 1.2rem;">Sem I</button>
+        <button class="tablinks pill_button" id="clickbbasem1" , onclick="openSemester(event, 'Semester I'); loadBbaSem1pdf();", style="font-size: 1.2rem;">Sem I</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester II'); loadBbaSem2pdf();", style="font-size: 1.2rem;">Sem II</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester III'); loadBbaSem3pdf();", style="font-size: 1.2rem;">Sem III</button>
         <button class="tablinks pill_button" , onclick="openSemester(event, 'Semester IV'); loadBbaSem4pdf();", style="font-size: 1.2rem;">Sem IV</button>
@@ -294,7 +294,9 @@
     </footer>
     <script src="./js/main.js">
     </script>
-    <script src="./js/mains.js">
+    <script>
+        document.getElementById("clickbbasem1").click();
+        document.getElementById("clickbbasem1").classList.add("active");
     </script>
 
 </body>
