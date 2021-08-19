@@ -1,0 +1,15 @@
+.active {
+    background-color: #474e5d !important;
+    color: white !important;
+}
+
+.tablinks {
+    margin: 0;
+    background-color: transparent;
+    background-color: #adadad;
+    width: 20%;
+    border-radius: 0;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+}
