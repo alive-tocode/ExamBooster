@@ -22,13 +22,14 @@ function typeWriter() {
 }
 
 document.getElementById("default").click();
+document.getElementById("default").classList.add("active");
 
 //Functions to load pdf of each semester by adding link to the iframes
 function loadSem1pdf() {
-    document.getElementById("sem1pdf1").src="";
-    document.getElementById("sem1pdf2").src="";
-    document.getElementById("sem1pdf3").src="";
-    document.getElementById("sem1pdf4").src="";
+    // document.getElementById("sem1pdf1").src="";
+    // document.getElementById("sem1pdf2").src="";
+    // document.getElementById("sem1pdf3").src="";
+    // document.getElementById("sem1pdf4").src="";
 }
 function loadSem2pdf() {
     document.getElementById("sem2pdf1").src="https://drive.google.com/file/d/1OpufJrX2l4xheRawHhdhhMZaNrur17Tf/preview";
@@ -49,10 +50,10 @@ function loadSem4pdf() {
     document.getElementById("sem4pdf4").src="https://drive.google.com/file/d/1-VgGU6gre8ZrkwFhgmcjhP0a_03MGsGr/preview";
 }
 function loadSem5pdf() {
-    document.getElementById("myid").src="";
-    document.getElementById("myid").src="";
-    document.getElementById("myid").src="";
-    document.getElementById("myid").src="";
+    // document.getElementById("myid").src="";
+    // document.getElementById("myid").src="";
+    // document.getElementById("myid").src="";
+    // document.getElementById("myid").src="";
 }
 
 function openSemester(evt, semester) {
@@ -69,7 +70,7 @@ function openSemester(evt, semester) {
     }
 
     document.getElementById(semester).style.display = "block";
-    evt.currentTarget.className += " active";   
+    evt.currentTarget.classList.add("active");  
 }
 
 
