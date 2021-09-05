@@ -18,138 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions</title>
-    <style>
-        html {
-            font-family: 'Baloo Bhai 2', cursive;
-            font-size: 100%;
-        }
-        
-        @media screen and (max-width:425px) {
-            html {
-                font-size: 70%;
-            }
-        }
-        
-        body {
-            margin: 0px;
-            background-color: rgb(255, 255, 255);
-            display: initial;
-        }
-        
-        p {
-            margin: 0px;
-        }
-        
-        header {
-            /* padding: 0.62px; */
-            text-align: center;
-            font-size: 2rem;
-            background-color: #008080;
-            border-radius: 0px 0px 30px 30px;
-            margin-bottom: 2px;
-            color: white;
-            padding: 0.3rem 0rem;
-            font-weight: bold;
-        }
-        
-        li {
-            list-style: none;
-            /* display: inline; */
-            /* margin: 0.62rem 0rem 0.62rem 0rem; */
-        }
-        
-        ul {
-            padding: 0px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            /* display: inline; */
-            /* border-left: 4px solid black; */
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        .content_heading {
-            font-weight: bold;
-        }
-        
-        #year_selector {
-            /* float: right; */
-            position: sticky;
-            /* top: 0; */
-            margin: 2rem;
-        }
-        
-        .year_of_question {
-            font-weight: bold;
-            text-align: center;
-            font-size: 1.7rem;
-            margin-top: 1.25rem;
-            margin-bottom: 15px;
-            background-color: #008080;
-            color: white;
-            border-radius: 15px;
-        }
-        
-        #question_answers {
-            /* float: left; */
-            /* width: 50rem; */
-            display: block;
-            align-self: center;
-            margin: 2rem;
-            margin: 2vw
-        }
-        
-        .each_year_question_answers {
-            padding: 10px;
-            border-radius: 15px;
-            margin-bottom: 25px;
-            background-color: #f1ebeb;
-        }
-        
-        .each_ques_ans {
-            margin: 1rem 0.5rem 0.5rem 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        input[type="checkbox"] {
-            display: none;
-        }
-        
-        .drop {}
-        
-        input+.drop+div {
-            display: none;
-        }
-        
-        .drop:after {
-            margin: 20px;
-            content: "ShowAnswer";
-        }
-        
-         :checked+.drop:after {
-            content: "HideAnswer";
-        }
-        
-        input:checked+.drop+div {
-            display: block;
-            /* background-color: white; */
-        }
-        
-        input:checked+.drop+div {
-            background-color: white;
-        }
-        
-        .answer {
-            margin: 0.5rem 0rem 0rem 0rem;
-            padding: 1.5rem 2rem;
-            border-radius: 2rem;
-            font-size: 100%;
-            line-height: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/Sol.css">
 </head>
 
 <body>
@@ -160,10 +29,10 @@
     <div id="year_selector">
         <ul>
             <!-- <li class="content_heading">Select Year</li> -->
-            <li><a href="#2020">2020</a></li>
-            <li><a href="#2019">2019</a></li>
-            <li><a href="#2018">2018</a></li>
-            <li><a href="#2017">2017</a></li>
+            <li><a class="tablinks" id="year_2020" onclick="openAnswer(event, '2020')" >2020</a></li>
+            <li><a class="tablinks" onclick="openAnswer(event, '2019')">2019</a></li>
+            <li><a class="tablinks" onclick="openAnswer(event, '2018')">2018</a></li>
+            <li><a class="tablinks" onclick="openAnswer(event, '2017')">2017</a></li>
         </ul>
     </div>
 
@@ -243,33 +112,39 @@
 
         <section class="each_year_question_answers" id="2019">
             <div class="year_of_question">2019</div>
-            <div>
+            <div class="each_ques_ans">
                 <input id="2019_Q1" type="checkbox" />
                 <label class="drop" for="2019_Q1">1. What is computer graphics?</label>
-                <div></div>
+                <div class="answer"></div>
             </div>
         </section>
 
         <section class="each_year_question_answers" id="2018">
             <div class="year_of_question">2018</div>
-            <div>
+            <div class="each_ques_ans">
                 <input id="2018_Q1" type="checkbox" />
                 <label class="drop" for="2018_Q1">1. What is computer graphics?</label>
-                <div>This is the answer.</div>
+                <div class="answer">This is the answer.</div>
             </div>
         </section>
 
         <section class="each_year_question_answers" id="2017">
             <div class="year_of_question">2017</div>
-            <div>
+            <div class="each_ques_ans">
                 <input id="2017_Q1" type="checkbox" />
                 <label class="drop" for="2017_Q1">1. What is computer graphics?</label>
-                <div>This is the answer.</div>
+                <div class="answer">This is the answer.</div>
             </div>
         </section>
 
 
     </section>
+
+    <script src="./js/Sol.js"></script>
+    <script>
+        document.getElementById("year_2020").click();
+        document.getElementById("year_2020").classList.add("active");
+    </script>
 </body>
 
 </html>
