@@ -24,10 +24,12 @@ function typeWriter() {
 
 //Functions to load pdf of each semester(Bca) by adding link to the iframes
 function loadBcaSem1pdf() {
-    // document.getElementById("sem1pdf1").src="";
-    // document.getElementById("sem1pdf2").src="";
-    // document.getElementById("sem1pdf3").src="";
-    // document.getElementById("sem1pdf4").src="";
+    if(document.getElementById("bcasem1pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1MniV3LKYvfjoJaBwDpCBKHdiS5fpbs4f/preview") {
+        document.getElementById("bcasem1pdf1").src="https://drive.google.com/file/d/1MniV3LKYvfjoJaBwDpCBKHdiS5fpbs4f/preview";
+        document.getElementById("bcasem1pdf2").src="https://drive.google.com/file/d/1fSGVSvjFOFAC_N33sGRLzQeLj5cXWlQh/preview";
+        document.getElementById("bcasem1pdf3").src="https://drive.google.com/file/d/15ZrJ3oAXdVdffh99V9xJEMqP8rlFbIm7/preview";
+        document.getElementById("bcasem1pdf4").src="https://drive.google.com/file/d/1zQ4Ymmew3skhSnVBx6WeYG8-oQHED4yZ/preview";
+    }
 }
 function loadBcaSem2pdf() {
     if(document.getElementById("bcasem2pdf1").contentWindow.location.href!="https://drive.google.com/file/d/1OpufJrX2l4xheRawHhdhhMZaNrur17Tf/preview") {
