@@ -29,20 +29,40 @@
     <div id="year_selector">
         <ul>
             <!-- <li class="content_heading">Select Year</li> -->
-            <li><a class="tablinks" id="year_2020" onclick="openAnswer(event, '2020')" >2020</a></li>
+            <li><a class="tablinks" onclick="openAnswer(event, '2020')" >2020</a></li>
             <li><a class="tablinks" onclick="openAnswer(event, '2019')">2019</a></li>
-            <li><a class="tablinks" onclick="openAnswer(event, '2018')">2018</a></li>
+            <li><a class="tablinks" id="default" onclick="openAnswer(event, '2018')">2018</a></li>
             <li><a class="tablinks" onclick="openAnswer(event, '2017')">2017</a></li>
         </ul>
     </div>
 
+    
     <section id="question_answers">
         <!-- Each section for different year questions -->
         <section class="each_year_question_answers" id="2020">
             <div class="year_of_question">2020</div>
             <div class="each_ques_ans">
-                <input id="2020_Q1a" type="checkbox" />
-                <label class="drop" for="2020_Q1a">
+                <input id="2020_Q1" type="checkbox" />
+                <label class="drop" for="2020_Q1">1. What is computer graphics?</label>
+                <div class="answer">Not Available</div>
+            </div>
+        </section>
+        
+
+        <section class="each_year_question_answers" id="2019">
+            <div class="year_of_question">2019</div>
+            <div class="each_ques_ans">
+                <input id="2019_Q1" type="checkbox" />
+                <label class="drop" for="2019_Q1">1. What is computer graphics?</label>
+                <div class="answer">Not Available</div>
+            </div>
+        </section>
+
+        <section class="each_year_question_answers" id="2018">
+            <div class="year_of_question">2018</div>
+            <div class="each_ques_ans">
+                <input id="2018_Q1a" type="checkbox" />
+                <label class="drop" for="2018_Q1a">
                     1a. What do you mean computer graphics ? Discuss its types and 
                     application in detail with suitable example.
                 </label>
@@ -77,8 +97,8 @@
                 </div>
             </div>
             <div class="each_ques_ans">
-                <input id="2020_Q1b" type="checkbox" />
-                <label class="drop" for="2020_Q1b">1b. Define display devices. Discuss its type in detail.</label>
+                <input id="2018_Q1b" type="checkbox" />
+                <label class="drop" for="2018_Q1b">1b. Define display devices. Discuss its type in detail.</label>
                 <div class="answer">
                     <p>
                         The display device is an output device used to represent the information in the form of images.Display systems are mostly called a video monitor or Video display unit (VDU). Display devices are designed to model, view, or display information. The purpose
@@ -108,24 +128,412 @@
                     </p>
                 </div>
             </div>
-        </section>
-
-        <section class="each_year_question_answers" id="2019">
-            <div class="year_of_question">2019</div>
             <div class="each_ques_ans">
-                <input id="2019_Q1" type="checkbox" />
-                <label class="drop" for="2019_Q1">1. What is computer graphics?</label>
-                <div class="answer"></div>
+                <input id="2018_Q2a" type="checkbox" />
+                <label class="drop" for="2018_Q2a">
+                    2a. What do you mean by flat panel display? Discuss its types in brief.
+                </label>
+                <div class="answer">
+                    <p>
+                        Flat-Panel Devices are the devices that have less volume, weight, and power consumption compared to Cathode Ray Tube (CRT). Due to the advantages of the Flat-Panel Display, use of CRT decreased. As Flat Panel Devices are light in weights that’s why they can be hang on walls and wear them on our wrist as a watch. Flat Panel Display (FPD) allow users to view data, graphics, text and images.
+                        <br><br>
+                        Advantages of Flat Panel Devices:
+                        <br><br>
+                        1. Flat Panel Devices like LCD produces high quality digital images.<br>
+                        2. Flat Panel monitor are stylish and have very space saving design.<br>
+                        3. Flat Panel Devices consumes less power and give maximum image size in minimum space.<br>
+                        4. Flat Panel Devices use its full color display capability.<br>
+                        5. Full motion video can be viewed on Flat Panel Devices without artifacts or contrast loss.
+                        <br><br>
+                        Types of Flat Panel Display:
+                        <br><br>
+                        1. Emissive Display<br>
+                        2. Non-Emissive Display
+                        <br><br>
+                        1. Emissive Display: The emissive displays are devices that convert electrical energy into light. Examples are Plasma Panel, thin film electroluminescent display and LED (Light Emitting Diodes).
+                        <br><br>
+                        2. Non-Emissive Display: The Non-Emissive displays use optical effects to convert sunlight or light from some other source into graphics patterns. Examples are LCD (Liquid Crystal Device).
+                        <br><br>
+                        Plasma Panel Display:
+                        <br><br>
+                        Plasma-Panels are also called as Gas-Discharge Display. It consists of an array of small lights. Lights are fluorescent in nature. The essential components of the plasma-panel display are:
+                        <br><br>
+                        1. Cathode: It consists of fine wires. It delivers negative voltage to gas cells. The voltage is released along with the negative axis.<br>
+                        2. Anode: It also consists of line wires. It delivers positive voltage. The voltage is supplied along positive axis.<br>
+                        3. Fluorescent cells: It consists of small pockets of gas liquids when the voltage is applied to this liquid (neon gas) it emits light.<br>
+                        4. Glass Plates: These plates act as capacitors. The voltage will be applied, the cell will glow continuously.
+                        <br><br>
+                        Advantage:<br>
+                        1. High Resolution<br>
+                        2. Large screen size is also possible.<br>
+                        3. Less Volume<br>
+                        4. Less weight<br>
+                        5. Flicker Free Display<br><br>
+                        Disadvantage:<br>
+                        1. Poor Resolution<br>
+                        2. Wiring requirement anode and the cathode is complex.<br>
+                        3. Its addressing is also complex.
+                        <br><br>
+                        LCD (Liquid Crystal Display):<br>
+                        Liquid Crystal Displays are the devices that produce a picture by passing polarized light from the surroundings or from an internal light source through a liquid-crystal material that transmits the light.
+                        <br><br>
+                        Advantage:<br>
+                        1. Low power consumption.<br>
+                        2. Small Size<br>
+                        3. Low Cost<br><br>
+                        Disadvantage:<br>
+                        1. LCDs are temperature-dependent (0-70°C)<br>
+                        2. LCDs do not emit light; as a result, the image has very little contrast.<br>
+                        3. LCDs have no color capability.<br>
+                        4. The resolution is not as good as that of a CRT.<br>
+                        
+                    </p>
+                </div>
             </div>
-        </section>
-
-        <section class="each_year_question_answers" id="2018">
-            <div class="year_of_question">2018</div>
             <div class="each_ques_ans">
-                <input id="2018_Q1" type="checkbox" />
-                <label class="drop" for="2018_Q1">1. What is computer graphics?</label>
-                <div class="answer">This is the answer.</div>
+                <input id="2018_Q2b" type="checkbox" />
+                <label class="drop" for="2018_Q2b">
+                    2b. Explain the types of input devices used in computer graphics workstations.
+                </label>
+                <div class="answer">
+                <p>
+                    The Input Devices are the hardware that is used to transfer transfers input to the computer. The data can be in the form of text, graphics, sound, and text. Output device display data from the memory of the computer. Output can be text, numeric data, line, polygon, and other objects.
+                    <br><br>
+                    These Devices include:
+                    <br><br>
+                    1. Keyboard<br>
+                    2. Mouse<br>
+                    3. Trackball<br>
+                    4. Spaceball<br>
+                    5. Joystick<br>
+                    6. Light Pen<br>
+                    7. Digitizer<br>
+                    8. Touch Panels<br>
+                    9. Voice Recognition<br>
+                    10. Image Scanner<br>
+                    <br>
+                    Keyboard:<br>
+                    The most commonly used input device is a keyboard. The data is entered by pressing the set of keys. All keys are labeled. A keyboard with 101 keys is called a QWERTY keyboard. The keyboard has alphabetic as well as numeric keys. Some special keys are also available. Example- Numeric Keys, Alphabetic keys, Special Control keys, Special Symbol Keys, Cursor Control Keys, Function Keys, Numeric Keyboard.
+                    <br><br>
+                    Advantage:<br>
+                    1. Suitable for entering numeric data.<br>
+                    2. Function keys are a fast and effective method of using commands, with fewer errors.
+                    <br><br>
+                    Mouse:<br>
+                    A Mouse is a pointing device and used to position the pointer on the screen. It is a small palm size box. There are two or three depression switches on the top. 
+                    <br><br>
+                    Advantage:<br>
+                    1. Easy to use<br>
+                    1. Not very expensive<br>
+                    <br>
+                    Trackball:<br>
+                    It is a pointing device. It is similar to a mouse. This is mainly used in notebook or laptop computer, instead of a mouse. This is a ball which is half inserted, and by changing fingers on the ball, the pointer can be moved.
+                    <br><br>
+                    Advantage:<br>
+                    1. Trackball is stationary, so it does not require much space to use it.<br>
+                    2. Compact Size.<br>
+                    <br>
+                    Spaceball:<br>
+                    It is similar to trackball, but it can move in six directions where trackball can move in two directions only. The movement is recorded by the strain gauge. Strain gauge is applied with pressure. It can be pushed and pulled in various directions.<br>
+                    <br>
+                    
+                    Applications:<br>
+                    It is used for three-dimensional positioning of the object.<br>
+                    It is used to select various functions in the field of virtual reality.<br>
+                    It is applicable in CAD applications.<br>
+                    <br>
+                    Joystick:<br>
+                    A Joystick is also a pointing device which is used to change cursor position on a monitor screen. Joystick is a stick having a spherical ball as its both lower and upper ends as shown in fig. The lower spherical ball moves in a socket.
+                    <br><br>
+                    Light Pen:<br>
+                    Light Pen (similar to the pen) is a pointing device which is used to select a displayed menu item or draw pictures on the monitor screen. It consists of a photocell and an optical system placed in a small tube.
+                    <br><br>
+                    Uses:<br>
+                    Light Pens can be used as input coordinate positions by providing necessary arrangements.<br>
+                    If background color or intensity, a light pen can be used as a locator.<br>
+                    It is used as a standard pick device with many graphics system.<br>
+                    <br>
+                    Digitizers:<br>
+                    The digitizer is an operator input device, which contains a large, smooth board (the appearance is similar to the mechanical drawing board) & an electronic tracking device, which can be changed over the surface to follow existing lines. <br>
+                    <br>
+                    Advantages:<br>
+                    Drawing can easily be changed.<br>
+                    It provides the capability of interactive graphics.<br>
+                    <br>
+                    Touch Panels:<br>
+                    Touch Panels is a type of display screen that has a touch-sensitive transparent panel covering the screen. A touch screen registers input when a finger or other object comes in contact with the screen.<br>
+                    <br>
+                    Voice Systems (Voice Recognition):<br>
+                    Voice Recognition is one of the newest, most complex input techniques used to interact with the computer. The user inputs data by speaking into a microphone. <br>
+                    <br>
+                    Advantage:<br>
+                    More efficient device.<br>
+                    Easy to use<br>
+                    Unauthorized speakers can be identified<br>
+                    <br>
+                    Image Scanner<br>
+                    It is an input device. The data or text is written on paper. The paper is feeded to scanner. The paper written information is converted into electronic format; this format is stored in the computer.<br>
+                    <br>
+                    Types of image Scanner:<br>
+                    1. Flat Bed Scanner<br>
+                    2. Hand Held Scanner
+                </p>
+                </div>
             </div>
+            <div class="each_ques_ans">
+                <input id="2018_Q3" type="checkbox" />
+                <label class="drop" for="2018_Q3">
+                    3. What do you mean by Aspect Ratio?
+                     How much time is spent in scanning across each row of pixel during screen refresh on a Raster Scan System with a resolution of 1280x1024 pixels and refresh rate of 60fps?
+                </label>
+                <div class="answer">
+                <p>
+                    The Aspect ratio of picture is the ratio of its width to its height. It is normally shown by two numbers separated by colon, as in 4:3. Here, the primary number tells that the picture is 4 units wide and the subsequent number tells that the picture is 3 units high. The most commonly utilized aspect ratios are 1.85:1 and 2.39:1 for film photography, 3:2 in still camera photography and 4:3 and 16:9 on TV.
+                    The most well-known aspect ratios utilized today in introduction of movies in theaters are 1.85:1 and 2.39:1. Two regular TV aspect ratios are 4:3 (1.3:1), all-inclusive video configuration of twentieth century, and 16:9 (1.7:1), general for top quality TV and European advanced TV. Other films and video angle ratios additionally exist, however are utilized rarely. In still camera photography, most well-known aspect ratios are 4:3, 3:2, and all more as of late found in purchaser cameras, 16:9. Other perspective proportions, for example, 5:3, 5:4, and 1:1 (square configuration) are utilized in photography too, especially in medium arrangement and huge organization.
+                    Changing over various ratios into another is made achievable by extending first picture to fill getting ratio’s showcase territory and removing any abundance picture data (zooming and editing), by including even mattes or vertical mattes to hold first organization’s aspect ratio, by extending (twisting) picture to fill accepting configuration’s ratio, or by scaling by various elements in two bearings.
+                    <br><br>
+                    Various kinds of Aspect Ratios –<br>
+                    While there are numerous kinds of Aspect ratios that are shaped from period photography was imagined yet just some are utilized to date. We would now observe at probably most generally utilized aspect ratios.
+                    <br><br>
+                    4:3 Standard –<br>
+                    4:3 (1.3:1) standard has been being used for TVs since creation of moving picture cameras and numerous PC screens used to have similar aspect ratio. It is additionally near 1.375:1 aspect ratio, characterized by Academy of Motion Picture Arts and Sciences as standard after appearance of optical sound in video form.
+                    <br><br>
+                    16:9 Standard –<br>
+                    16:9 (1.7:1) is universal standard configuration of HDTV, non-HD computerized TV, and simple widescreen TV. Numerous advanced camcorders have capacity to record in 16:9 (= 42:32), and 16:9 is main widescreen aspect ratio locally upheld by DVD standard. DVD makers can likewise decide to show significantly more extensive proportions.<br>
+                    Example – 1.85:1 and 2.39:1 inside 16:9 DVD outline by hard tangling or including dark bars inside picture itself. It is presently likewise being utilized in cell phones, PCs, and numerous sorts of media.
+                    <br><br>
+                    2:1 Standard –<br>
+                    It is intended to be trade-off between film 2.39:1 ratio and HD-TV used 16:9 ratio. This standard has increased little consideration in dramatic film advertise, yet has as of late been utilized by Netflix and Amazon Video for creations, for example, House of Cards and Transparent, individually.
+                    <br><br>
+                    Vertical Video Standard –<br>
+                    Another pattern emerging from across board utilization of cell phones is vertical video (9:16) that is planned for survey in picture mode. It was started by Snapchat and is additionally now being used by Twitter, TikTok, and Facebook.
+                    <br><br>
+                    1.85:1 Standard –<br>
+                    At the point when film participation dropped, Hollywood made widescreen angle proportions so as to separate entertainment world from TV, with one of most well-known being 1.85:1 proportion.
+                    <br>
+                    (Answer of second part of question is not mentioned)
+                </p>
+                </div>
+            </div>
+            <div class="each_ques_ans">
+                <input id="2018_Q4" type="checkbox" />
+                <label class="drop" for="2018_Q4">
+                    4. Derive and explain the Bresenham's line algorithm and make a proper difference with DDA algorithm with suitable example.
+                </label>
+                <div class="answer">
+                <p>
+                    Bresenham's line drawing algorithm is used for scan converting a line. It was developed by Jack Elton Bresenham in 1962. It is an efficient method because it involves only integer addition, subtractions, and multiplication operations. These operations can be performed very rapidly so lines can be generated quickly.
+                    <br><br>
+                    In this method, next pixel selected is that one who has the least distance from true line.
+                    <br><br>
+                    Bresenham's Line Algorithm:
+                    <br><br>
+                    Step1: Read two end points p1(x1, y1) and P2(x2, y2).<br>
+                    Step2: Calculate<br>
+                            dx = x2-x1<br>
+                                    dy = y2-y1<br>
+                                    
+                    Step3: Calculate decision parameter P<br>
+                            P = 2dy - dx<br>
+                    Step4: Set initial point<br>
+                            x=x1<br>
+                            y=y1<br>
+                            and i=0<br>
+                    Step5: Now, Plot the point (x, y)<br>
+                            if P<0 then<br>
+                                x=x+1<br>
+                                P=P+2dy<br>
+                            else<br>
+                                x=x+1<br>
+                                y=y+1<br>
+                                P=P+2dy-2dx<br>
+                    Step6: Repeat Step5 until i<=dx<br>
+                    Step7: Stop<br><br>
+                    Advantage:<br>
+                    1. It involves only integer arithmetic, so it is simple.<br>
+                    <br>
+                    2. It avoids the generation of duplicate points.
+                    <br>
+                    3. It can be implemented using hardware because it does not use multiplication and division.
+                    <br>
+                    4. It is faster as compared to DDA (Digital Differential Analyzer) because it does not involve floating point calculations like DDA Algorithm.
+                    <br><br>
+                    Disadvantage:<br>
+                    1. This algorithm is meant for basic line drawing only Initializing is not a part of Bresenham's line algorithm. So to draw smooth lines, you should want to look into a different algorithm.
+                    <br>
+                    Example:<br>
+                    Q. Draw a line with end points (20, 10) and (30, 18) using Bresenham's algorithm.<br><br>
+                    Sol.<br>
+
+                    Step1: We have two end points (20, 10) and (30, 18)<br>
+                        i.e. x1=20   x2=30<br>
+                            y1=10   y2=18<br>
+                            <br>
+                    Step2: dx=x2-x1=30-20=10<br>
+                        dy=y2-y2=18-10=8<br>
+                        <br>
+                    Step3: Calculate decision parameter<br>
+                        P=2dy-dx<br>
+                        =2x8-10<br>
+                        =6<br>
+                        <br>
+                    Step4: Set initial value (x,y)<br>
+                        x=x1=20<br>
+                        y=y1=10<br>
+                        and i=0<br>
+                        <br>
+                    Step5: Execute until i<=dx<br>
+                        i.e. i<=10<br>
+                        <br>
+                        i	P	Ploting Points<br>
+                        0		(20,10)<br>
+                        1	6	(21,11)<br>
+                        2	2	(22,12)<br>
+                        3	-2	(23,12)<br>
+                        4	14	(24,13)<br>
+                        5	10	(25,14)<br>
+                        6	6	(26,15)<br>
+                        7	2	(27,16)<br>
+                        8	-2	(28,16)<br>
+                        9	14	(29,17)<br>
+                        10	10	(30,18)
+                    
+                </p>
+                </div>
+            </div>
+            <div class="each_ques_ans">
+                <input id="2018_Q5" type="checkbox" />
+                <label class="drop" for="2018_Q5">
+                    5. What do you mean by 2D transformation? Discuss its all parts in detail with suitable example.
+                </label>
+                <div class="answer">
+                <p>
+                    Transformation means changing some graphics into something else by applying rules. We can have various types of transformations such as translation, scaling up or down, rotation, shearing, etc. When a transformation takes place on a 2D plane, it is called 2D transformation.
+                    <br><br>
+                    Transformations play an important role in computer graphics to reposition the graphics on the screen and change their size or orientation.
+                    <br><br>
+                    In computer graphics, transformation of the coordinates consists of three major processes:
+                    <br><br>
+                    1. Translation<br>
+                    2. Rotation<br>
+                    3. Scaling<br>
+                    <br>
+                    1. Translation: A translation process moves every point a constant distance in a specified direction. It can be described as a rigid motion. A translation can also be interpreted as the addition of a constant vector to every point, or as shifting the origin of the coordinate system.<br>
+                    Suppose, If point (X, Y) is to be translated by amount Dx and Dy to a new location (X’, Y’) then new coordinates can be obtained by adding Dx to X and Dy to Y as:<br>
+                    <br>
+                    X' = Dx + X<br>
+                    Y' = Dy + Y<br>
+                    <br>
+                    or P' = T + P where<br>
+                    <br>
+                    P' = (X', Y'),<br>
+                    T = (Dx, Dy ),<br>
+                    P = (X, Y)<br>
+                    <br>
+                    Here, P(X, Y) is the original point. T(Dx, Dy) is the translation factor, i.e. the amount by which the point will be translated. P'(X’, Y’) is the coordinates of point P after translation.
+                    <br><br>
+                    2. Rotation: Rotating an object by a given angle about a given pivot point and print the new co-ordinates is called Rotation.
+                    <br><br>
+                    3. Scaling: A scaling transformation alters size of an object. In the scaling process, we either compress or expand the dimension of the object.
+                    Scaling operation can be achieved by multiplying each vertex coordinate (x, y) of the polygon by scaling factor sx and sy to produce the transformed coordinates as (x’, y’).<br>
+                    So, x’ = x * sx and y’ = y * sy.<br>
+                    The scaling factor sx, sy scales the object in X and Y direction respectively.
+                </p>
+                </div>
+            </div>
+            <div class="each_ques_ans">
+                <input id="2018_Q6" type="checkbox" />
+                <label class="drop" for="2018_Q6">
+                    6. Write short notes on following: <br>
+                        (a) Plasma Panel Display <br>
+                        (b) Raster Scan Display <br>
+                        (c) CRT <br>
+                        (d) Vector Scan Display 
+                </label>
+                <div class="answer">
+                <p>
+                    (a) Plasma Panel Display: <br>
+                    Plasma-Panels are also called as Gas-Discharge Display. It consists of an array of small lights. Lights are fluorescent in nature. The essential components of the plasma-panel display are:
+                    <br><br>
+                    Cathode: It consists of fine wires. It delivers negative voltage to gas cells. The voltage is released along with the negative axis.<br>
+                    Anode: It also consists of line wires. It delivers positive voltage. The voltage is supplied along positive axis.<br>
+                    Fluorescent cells: It consists of small pockets of gas liquids when the voltage is applied to this liquid (neon gas) it emits light.<br>
+                    Glass Plates: These plates act as capacitors. The voltage will be applied, the cell will glow continuously.
+                    The gas will slow when there is a significant voltage difference between horizontal and vertical wires. The voltage level is kept between 90 volts to 120 volts. Plasma level does not require refreshing. Erasing is done by reducing the voltage to 90 volts.<br>
+                    <br>
+                    Each cell of plasma has two states, so cell is said to be stable. Displayable point in plasma panel is made by the crossing of the horizontal and vertical grid. The resolution of the plasma panel can be up to 512 * 512 pixels.
+                    <br><br>
+                    Advantage:<br>
+                    1. High Resolution<br>
+                    2. Large screen size is also possible.<br>
+                    3. Less Volume<br>
+                    4. Less weight<br>
+                    5. Flicker Free Display<br>
+                    <br>
+                    Disadvantage:<br>
+                    1. Poor Resolution<br>
+                    2. Wiring requirement anode and the cathode is complex.<br>
+                    3. Its addressing is also complex.<br>
+                    <br>
+                    (b) Raster Scan Displays are most common type of graphics monitor which employs CRT. It is based on television technology. In raster scan system electron beam sweeps across the screen, from top to bottom covering one row at a time.A pattern of illuminated pattern of spots is created by turning beam intensity on and off as it moves across each row. A memory area called refresh buffer or frame buffer stores picture definition. This memory area holds intensity values for all screen points. Stored intensity values are restored from frame buffer and painted on screen taking one row at a time.Each screen point is referred to as pixels.
+                    <br><br>
+                    In raster scan systems refreshing is done at done at a rate of 60-80 frames per second. Refresh rates are also sometimes described in units of cycles per second / Hertz (Hz). At the end of each scan line, electron beam begins to display next scan line after returning to left side of screen. The return to the left of screen after refresh of each scan line is known as horizontal retrace of electron beam. At the end of each frame electron beam returns to top left corner and begins the next frame.
+                    <br><br>
+                    ADVANTAGES:
+                    <br><br>
+                    1. Real life images with different shades can be displayed.<br>
+                    2. Color range available is bigger than random scan display.<br>
+                    <br>
+                    DISADVANTAGES:<br>
+                    <br>
+                    1. Resolution is lower than random scan display.<br>
+                    2. More memory is required.<br>
+                    3. Data about the intensities of all pixel has to be stored.<br>
+                    <br>
+                    (c) Cathode Ray Tubes (CRT) – <br>
+                    A cathode ray tube (CRT) is a specialized vacuum tube in which images are produced when an electron beam strikes a phosphorescent surface.It modulates, accelerates, and deflects electron beam(s) onto the screen to create the images. Most desktop computer displays make use of CRT for image displaying purposes. 
+                    <br><br>
+                    Cathode Ray Oscilloscope Circuitry- <br>
+                    <br>
+                    Vertical Amplifier<br>
+                    Horizontal amplifier<br>
+                    Time base Circuit<br>
+                    Power Supplies<br>
+                    Cathode Ray Tube<br>
+                    <br>
+                    Types Of Deflection:  <br>
+                    <br>
+                    Electrostatic Deflection – <br>
+                    The electron beam (cathode rays) passes through a highly positively charged metal cylinder that forms an electrostatic lens. This electrostatic lens focuses the cathode rays to the center of the screen in the same way as an optical lens focuses the beam of light. Two pairs of parallel plates are mounted inside the CRT tube. Electrostatic deflection sensitivity of a Cathode Ray Tube is the amount of deflection produced in the electron beam when a voltage of 1V is applied between the plates.<br>
+                    Magnetic Deflection – <br>
+                    Here, two pairs of coils are used. One pair is mounted on the top and bottom of the CRT tube, and the other pair on the two opposite sides. The magnetic field produced by both these pairs is such that a force is generated on the electron beam in a direction which is perpendicular to both the direction of the magnetic field and to the direction of flow of the beam. One pair is mounted horizontally and the other vertically.<br>
+                    Now as this highly energetic beam strikes the surface of the screen, these electrons are stopped and their kinetic energy is absorbed by the phosphor screen (atoms). Some energy is wasted in heat also, but the majority of the kinetic energy gets transferred to the phosphor atoms. As these atoms receive this huge amount of energy, they get excited to a higher energy level. <br>
+                    <br>
+                    After a short time, these atoms start returning to their original energy level. The original level is at a lower energy level than the excited one, hence the atoms release some energy while coming down. This extra energy is dissipated in the form of a small quantum of light. Thus the de-excitation results in a bright-colored spot on the screen. The frequency (color) of the spot depends on the difference between the two energy levels (excited level and ground-state level). 
+                    <br><br>
+                    Different kinds of phosphors are used in a CRT. The difference is based upon the time for how long the phosphor continues to emit light after the CRT beam has been removed. This property is referred to as Persistence. Basically, persistence means how much time is taken by the emitted light to reduce to one-tenth of its original intensity. Now, phosphors with lower persistence require higher refresh rates to maintain a picture on the screen without any flicker. 
+                    <br><br>
+                    (d) Vector Scan Display- In Random-Scan Display electron beam is directed only to the ares of screen where a picture has to be drawn. It is also called vector displays, as it draws picture one line at time. It can draw and refresh component lines of a picture in any specified sequence. Pen plotter is an example of random-scan displays.
+                    <br><br>
+                    The number of lines regulates refresh rate on random-scan displays. An area of memory called refresh display files stores picture definition as a set of line drawing commands. The system returns back to first line command in the list, after all the drawing commands have been processed. High-quality vector systems can handle around 100, 00 short lines at this refresh rate. Faster refreshing can burn the phosphor. To avoid this every refresh cycle is delayed to prevent refresh rate greater than 60 frames per second.
+                    <br><br>
+                    Random-Scan Display Processors:<br>
+                    Input in the form of an application program is stored in the system memory along with graphics package. Graphics package translates the graphic commands in application program into a display file stored in system memory. This display file is then accessed by the display processor to refresh the screen. The display processor cycles through each command in the display file program. Sometimes the display processor in a random-scan is referred as Display Processing Unit / Graphics Controller.
+                    <br><br>
+                    ADVANTAGES:<br>
+                    <br>
+                    1. Higher resolution as compared to raster scan display.<br>
+                    2. Produces smooth line drawing.<br>
+                    3. Less Memory required.<br>
+                    <br>
+                    DISADVANTAGES:<br>
+                    <br>
+                    1. Realistic images with different shades cannot be drawn.<br>
+                    2. Colour limitations.
+                </p>
+                </div>
+            </div>
+
         </section>
 
         <section class="each_year_question_answers" id="2017">
@@ -133,7 +541,7 @@
             <div class="each_ques_ans">
                 <input id="2017_Q1" type="checkbox" />
                 <label class="drop" for="2017_Q1">1. What is computer graphics?</label>
-                <div class="answer">This is the answer.</div>
+                <div class="answer">Not Available</div>
             </div>
         </section>
 
@@ -142,8 +550,8 @@
 
     <script src="./js/Sol.js"></script>
     <script>
-        document.getElementById("year_2020").click();
-        document.getElementById("year_2020").classList.add("active");
+        document.getElementById("default").click();
+        document.getElementById("default").classList.add("active");
     </script>
 </body>
 
