@@ -1,0 +1,129 @@
+html {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 100%;
+}
+
+@media screen and (max-width:425px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    display: initial;
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    /* padding: 0.62px; */
+    text-align: center;
+    font-size: 2rem;
+    background-color: #008080;
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 2px;
+    color: white;
+    padding: 0.3rem 0rem;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.content_heading {
+    font-weight: bold;
+}
+
+#year_selector {
+    position: sticky;
+    margin: 2rem;
+}
+
+.year_of_question {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 1.25rem;
+    margin-bottom: 15px;
+    background-color: #008080;
+    color: white;
+    border-radius: 15px;
+}
+
+#question_answers {
+    /* float: left; */
+    /* width: 50rem; */
+    display: block;
+    align-self: center;
+    margin: 2rem;
+    margin: 2vw
+}
+
+.each_year_question_answers {
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: #f1ebeb;
+}
+
+.each_ques_ans {
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.drop {}
+
+input+.drop+div {
+    display: none;
+}
+
+.drop:after {
+    margin: 20px;
+    content: "ShowAnswer";
+}
+
+ :checked+.drop:after {
+    content: "HideAnswer";
+}
+
+input:checked+.drop+div {
+    display: block;
+    /* background-color: white; */
+}
+
+input:checked+.drop+div {
+    background-color: white;
+}
+
+.answer {
+    margin: 0.5rem 0rem 0rem 0rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    font-size: 100%;
+    line-height: 2rem;
+}
