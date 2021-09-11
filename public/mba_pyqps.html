@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Title-->
+    <title> ExamJarvis|MBA </title>
+    <!--Favicon-->
+    <link rel="icon" href="./assets/images/Exam Jarvis Icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/PYQPS.css">
+    <!--For adding icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Heading-->
+    <!--Header with sidepanel nav and logo-->
+    <div id="Home" class="top_section2"> <button class="openbtn" onclick="openNav()">☰</button>
+        <div id="mySidepanel" class="sidepanel"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> <a href="./index.html" onclick="closeNav()"><i class="fa fa-caret-left"></i>&nbsp; Main Page</a> <a href="#Home" onclick="closeNav()"><i class="fa fa-home icon"></i>Home</a>            <a href="#Semester I" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester I</a> <a href="#Semester II" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester II</a>
+            <a href="#Semester III Group-A" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-A</a> <a href="#Semester III Group-B" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-B</a> <a href="#Semester III Group-C" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-C</a> <a href="#Semester III Group-D" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-D</a> <a href="#Semester III Group-E" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-E</a> <a href="#Semester III Group-F" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-F</a> <a href="#Semester III Group-G" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-G</a> <a href="#Semester III Group-H" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-H</a> <a href="#Semester III Group-I" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-I</a> <a href="#Semester III Group-J" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester III Group-J</a> <a href="#Semester IV Group-A" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester IV Group-A</a> <a href="#Semester IV Group-B" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester IV Group-B</a> <a href="#Semester IV Group-C" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester IV Group-C</a> <a href="#Semester IV Group-D" onclick="closeNav()"><i class="fa fa-graduation-cap"></i>&nbsp; Semester IV Group-D</a>
+        </div>
+        <!-- <h3 style="display: inline; font-size: 1.7rem;color: #ecc65d;"> <span style="color:#ecc65d;">BCA</span> PYQPs OF <a href="https://lnmcbm.org/" style="color: white; text-decoration: underline;"><span style="color:#ecc65d;">LNMCBM</span></a>. </h3> -->
+        <div class="about_us_section" style="padding: 1rem; margin: 1rem 0;margin-top: -5%;background-color: #008080;">
+            <h1 style="color: #ECC65D;">MBA PYQP's OF LNMCBM</h1>
+        </div>
+    </div>
+    <div class="about_us_section" , style="display:flex; justify-content: space-evenly; padding: 0 0 0 0; margin: 0rem 0; background-color: white;"> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester I">Sem I</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester II">Sem II</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-A">Sem III Gr-A</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-B">Sem III Gr-B</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-C">Sem III Gr-C</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-D">Sem III Gr-D</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-E">Sem III Gr-E</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-F">Sem III Gr-F</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-G">Sem III Gr-G</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-H">Sem III Gr-H</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-I">Sem III Gr-I</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester III Group-J">Sem III Gr-J</a></button>        <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester IV Group-A">Sem IV Gr-A</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester IV Group-B">Sem IV Gr-B</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester IV Group-C">Sem IV Gr-C</a></button> <button class="pill_button" , style="font-size: 1.2rem;"><a href="#Semester IV Group-D">Sem IV Gr-D</a></button> </div>
+    <!--Semester wise pdf-->
+
+    <!--Semester I-->
+    <div id="Semester I" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-I</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">MC&P</a></button> <button class="pill_button"><a href="">OB</a></button> <button class="pill_button"><a href="">MA</a></button>
+        <button class="pill_button"><a href="">ME</a></button>  <button class="pill_button"><a href="">QT</a></button> <button class="pill_button"><a href="">MIS</a></button> <button class="pill_button"><a href="">BE&G</a></button>
+    </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-101</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Concept & Practices)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1D7yWD4ImGYspGz3AKgnVz8DkMFfkh60a/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div> 
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-102</h2>
+                    <p class="about_us_title" style="display: inline;">(Organisational Behaviour)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1EhwX19HykbyYx484CrKtGzo3a8cF9__p/preview" width="100%" height="400px" allow="autoplay"></iframe>--> 
+            </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-103</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Accounting)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1EftmFpXvwfkallBw3qWaNyUfTB8OhXLj/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-104</h2>
+                    <p class="about_us_title" style="display: inline;">(Managerial Economics)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1EeAtoZpaYeBviPizIwrjC-iMIn8N_bFR/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-105</h2>
+                    <p class="about_us_title" style="display: inline;">(Quantitative Techniques)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1Ecsl87MRefQ81hQh0sjS1NWzkT7v-lSi/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-106</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Information System)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1Ecsl87MRefQ81hQh0sjS1NWzkT7v-lSi/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-107</h2>
+                    <p class="about_us_title" style="display: inline;">(Business Ethics & Governance)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1Ecsl87MRefQ81hQh0sjS1NWzkT7v-lSi/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester II-->
+    <div id="Semester II" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-II</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">PM</a></button> <button class="pill_button"><a href="">MM</a></button> <button class="pill_button"><a href="">HRM</a></button>
+        <button class="pill_button"><a href="">FM</a></button>  <button class="pill_button"><a href="">RM</a></button> <button class="pill_button"><a href="">OR</a></button> <button class="pill_button"><a href="">LAOB</a></button>
+    </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-201</h2>
+                    <p class="about_us_title" style="display: inline;">(Production Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1D7yWD4ImGYspGz3AKgnVz8DkMFfkh60a/preview"  width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-202</h2>
+                    <p class="about_us_title" style="display: inline;">(Marketing Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1DFanxEkW2jSeHXDP6f1wVXvqkTd7d9ur/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-203</h2>
+                    <p class="about_us_title" style="display: inline;">(Human Resource Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" , src="https://drive.google.com/file/d/1DJ5stygfcitgPy4zxyBxBoarEEmlbCr7/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-204</h2>
+                    <p class="about_us_title" style="display: inline;">(Financial Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DX9WcMno1KNp6QS97jllZlPbUFU5nIpZ/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-205</h2>
+                    <p class="about_us_title" style="display: inline;">(Research Methodology)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1DPyWVQ9GOMcyxqDTJG_XQc9bZsFcM2rq/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-206</h2>
+                    <p class="about_us_title" style="display: inline;">(Operations Research)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1DPyWVQ9GOMcyxqDTJG_XQc9bZsFcM2rq/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-207</h2>
+                    <p class="about_us_title" style="display: inline;">(Legal Aspects Of Business)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0"  src="https://drive.google.com/file/d/1DPyWVQ9GOMcyxqDTJG_XQc9bZsFcM2rq/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-A-->
+    <div id="Semester III Group-A" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-A</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">MR&CB</a></button> <button class="pill_button"><a href="">IMC</a></button> <button class="pill_button"><a href="">S&DM</a></button> <button class="pill_button"><a href="">IM</a></button> <button class="pill_button"><a href="">RM</a></button> <button class="pill_button"><a href="">IASM</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-311</h2>
+                    <p class="about_us_title" style="display: inline;">(Marketing Research & Consumer Behaviour)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-312</h2>
+                    <p class="about_us_title" style="display: inline;">(Integrated Marketing Communications)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-313</h2>
+                    <p class="about_us_title" style="display: inline;">(Sales & Distribution Management)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-314</h2>
+                    <p class="about_us_title" style="display: inline;">(International Marketing)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-315</h2>
+                    <p class="about_us_title" style="display: inline;">(Rural Marketing)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-316</h2>
+                    <p class="about_us_title" style="display: inline;">(Industrial And Services Marketing)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-B-->
+    <div id="Semester III Group-B" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-B</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">MOIR</a></button> <button class="pill_button"><a href="">HRD</a></button> <button class="pill_button"><a href="">ODMD</a></button> <button class="pill_button"><a href="">LWSS</a></button> <button class="pill_button"><a href="">CRM</a></button> <button class="pill_button"><a href="">NAC</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-321</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Of Industrial Relations)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-322</h2>
+                    <p class="about_us_title" style="display: inline;">(Human Resource Development)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-323</h2>
+                    <p class="about_us_title" style="display: inline;">(Organisational Development And Management Of Discipline)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">Mb-324</h2>
+                    <p class="about_us_title" style="display: inline;">(Labour Welfare & Social Security)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-325</h2>
+                    <p class="about_us_title" style="display: inline;">(Compensation & Reward Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-326</h2>
+                    <p class="about_us_title" style="display: inline;">(Negotiation And Counselling)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-C-->
+    <div id="Semester III Group-C" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-C</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">FC&R</a></button> <button class="pill_button"><a href="">SA&PM</a></button> <button class="pill_button"><a href="">RM&D</a></button> <button class="pill_button"><a href="">MPFS</a></button> <button class="pill_button"><a href="">CF</a></button> <button class="pill_button"><a href="">IF</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-331</h2>
+                    <p class="about_us_title" style="display: inline;">(Financial Control & Reporting)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-332</h2>
+                    <p class="about_us_title" style="display: inline;">(Security Analysis & Portfolio Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-333</h2>
+                    <p class="about_us_title" style="display: inline;">(Risk Management & Derivatives)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-334</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Of Project-Financial Services)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">CS-335</h2>
+                    <p class="about_us_title" style="display: inline;">(Corporate Finance)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-336</h2>
+                    <p class="about_us_title" style="display: inline;">(International Finance)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-D-->
+    <div id="Semester III Group-D" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-D</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">PP&C</a></button> <button class="pill_button"><a href="">ORP</a></button> <button class="pill_button"><a href="">PM</a></button> <button class="pill_button"><a href="">MM</a></button> <button class="pill_button"><a href="">LSCM</a></button> <button class="pill_button"><a href="">TQM</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-341</h2>
+                    <p class="about_us_title" style="display: inline;">(Production Planning & Control)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-342</h2>
+                    <p class="about_us_title" style="display: inline;">(Operation Research In Production)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-343</h2>
+                    <p class="about_us_title" style="display: inline;">(Purchase Management)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-344</h2>
+                    <p class="about_us_title" style="display: inline;">(Materials Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-345</h2>
+                    <p class="about_us_title" style="display: inline;">(Logistics And Supply Chain Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-346</h2>
+                    <p class="about_us_title" style="display: inline;">(Total Quality Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-E-->
+    <div id="Semester III Group-E" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-E</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">ITF</a></button> <button class="pill_button"><a href="">DBMS</a></button> <button class="pill_button"><a href="">SAD</a></button> <button class="pill_button"><a href="">ECRM</a></button> <button class="pill_button"><a href="">MSS</a></button> <button class="pill_button"><a href="">DCEC</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-351</h2>
+                    <p class="about_us_title" style="display: inline;">(Information Technology Fundamentals)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-352</h2>
+                    <p class="about_us_title" style="display: inline;">(Database Management System)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-353</h2>
+                    <p class="about_us_title" style="display: inline;">(System Analysis And Design)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-354</h2>
+                    <p class="about_us_title" style="display: inline;">(Electronic Customer Relationship Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-355</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Support System)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-356</h2>
+                    <p class="about_us_title" style="display: inline;">(Data Communication & Electronic Commerce)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-F-->
+    <div id="Semester III Group-F" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-F</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">RM</a></button> <button class="pill_button"><a href="">CSM</a></button> <button class="pill_button"><a href="">RD&AE</a></button> <button class="pill_button"><a href="">RE&MF</a></button> <button class="pill_button"><a href="">MAB</a></button> <button class="pill_button"><a href="">SE</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">CS-361</h2>
+                    <p class="about_us_title" style="display: inline;">(Rural Marketing)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-362</h2>
+                    <p class="about_us_title" style="display: inline;">(Co-operative Sector Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-363</h2>
+                    <p class="about_us_title" style="display: inline;">(Rural Development & Agriculture Economics)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-364</h2>
+                    <p class="about_us_title" style="display: inline;">(Rural Entrepreneurship & Micro Finance)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-365</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Of Agriculture Business)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-366</h2>
+                    <p class="about_us_title" style="display: inline;">(Social Entrepreneurship)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-G-->
+    <div id="Semester III Group-G" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-G</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">CBB</a></button> <button class="pill_button"><a href="">MM</a></button> <button class="pill_button"><a href="">SM</a></button> <button class="pill_button"><a href="">L&SCM</a></button> <button class="pill_button"><a href="">E-COM</a></button> <button class="pill_button"><a href="">RBM</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-371</h2>
+                    <p class="about_us_title" style="display: inline;">(Consumer Buying Behaviour)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-372</h2>
+                    <p class="about_us_title" style="display: inline;">(Mall Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-373</h2>
+                    <p class="about_us_title" style="display: inline;">(Services Marketing)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-374</h2>
+                    <p class="about_us_title" style="display: inline;">(Logistic & Supply Chain Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-375</h2>
+                    <p class="about_us_title" style="display: inline;">(E-Commerce)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-376</h2>
+                    <p class="about_us_title" style="display: inline;">(Retail Brand Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-H-->
+    <div id="Semester III Group-H" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-H</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">TS-M&ME</a></button> <button class="pill_button"><a href="">L&SCM</a></button> <button class="pill_button"><a href="">O&LATM</a></button> <button class="pill_button"><a href="">CM-MT</a></button> <button class="pill_button"><a href="">PL&C</a></button> <button class="pill_button"><a href="">C&CH</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-381</h2>
+                    <p class="about_us_title" style="display: inline;">(Transport Sector - Macro & Micro Economics)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-382</h2>
+                    <p class="about_us_title" style="display: inline;">(Logistic & Supply Chain Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-383</h2>
+                    <p class="about_us_title" style="display: inline;">(Organization & Legal Aspects Of Transport Modes)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-384</h2>
+                    <p class="about_us_title" style="display: inline;">(Concept Of Multi-Model Transport)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-385</h2>
+                    <p class="about_us_title" style="display: inline;">(Port Logistics & Connectivity)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-386</h2>
+                    <p class="about_us_title" style="display: inline;">(Cargo & Container Handling)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-I-->
+    <div id="Semester III Group-I" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-I</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">SCM</a></button> <button class="pill_button"><a href="">FM</a></button> <button class="pill_button"><a href="">FTS</a></button> <button class="pill_button"><a href="">IM</a></button> <button class="pill_button"><a href="">P&QM</a></button> <button class="pill_button"><a href="">PDM</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-391</h2>
+                    <p class="about_us_title" style="display: inline;">(Supply Chain Management)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-392</h2>
+                    <p class="about_us_title" style="display: inline;">(Facilities Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-393</h2>
+                    <p class="about_us_title" style="display: inline;">(Freight Transport System)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-394</h2>
+                    <p class="about_us_title" style="display: inline;">(Inventory Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-395</h2>
+                    <p class="about_us_title" style="display: inline;">(Procurement & Quality Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-396</h2>
+                    <p class="about_us_title" style="display: inline;">(Physical Distribution Management)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester III Group-J-->
+    <div id="Semester III Group-J" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-III Group-J</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">TQM</a></button> <button class="pill_button"><a href="">P&ATQM</a></button> <button class="pill_button"><a href="">ST&TOT</a></button> <button class="pill_button"><a href="">ST&TIT</a></button> <button class="pill_button"><a href="">Q&CS</a></button> <button class="pill_button"><a href="">TFRP</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3101</h2>
+                    <p class="about_us_title" style="display: inline;">(Total Quality Management)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DswnrLP8UoDv99TiGw0qbHTo-MdT-VJd/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3102</h2>
+                    <p class="about_us_title" style="display: inline;">(Principles & Approaches Of Total Quality Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DpDXK18UkiXW9hPeKivPV-vYaNuuLz0R/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!-- <div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3103</h2>
+                    <p class="about_us_title" style="display: inline;">(Strategic Tools & Techniques Of TQM)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1Dn1FPnj1CBF5-ew8cXgtWz142yjDzbQK/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3104</h2>
+                    <p class="about_us_title" style="display: inline;">(Statistical Tools & Techniques In TQM)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DboRc1C7Llr4PoiNaIj_cFMv5JAfFpTY/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3105</h2>
+                    <p class="about_us_title" style="display: inline;">(Quality & Customer Satisfaction)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-3106</h2>
+                    <p class="about_us_title" style="display: inline;">(Tools For Radical Performance)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1DcYa4aH3eZkTSPXyVI3SKzlqHFT6-1Lx/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+    
+    <!--Semester IV Group-A-->
+    <div id="Semester IV Group-A" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-IV Group-A</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">IMC</a></button> <button class="pill_button"><a href="">S&DM</a></button> <button class="pill_button"><a href="">ISM</a></button>        </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-411</h2>
+                    <p class="about_us_title" style="display: inline;">(Integrated Marketing Communications)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-412</h2>
+                    <p class="about_us_title" style="display: inline;">(Sales & Distribution Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1ED5zx2pdTQDVELWiFjYLIeS--oh8DGsH/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-413</h2>
+                    <p class="about_us_title" style="display: inline;">(Industrial And Services Marketing)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1EH3u3SNNPSKUZ5DN7JtABVDc9wi54pVA/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester IV Group-B-->
+    <div id="Semester IV Group-B" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-IV Group-B</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">MIR</a></button> <button class="pill_button"><a href="">HRD</a></button> <button class="pill_button"><a href="">NAC</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-421</h2>
+                    <p class="about_us_title" style="display: inline;">(Management Of Industrial Relations)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-422</h2>
+                    <p class="about_us_title" style="display: inline;">(Human Resource Development)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1ED5zx2pdTQDVELWiFjYLIeS--oh8DGsH/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-423</h2>
+                    <p class="about_us_title" style="display: inline;">(Negotiation And Counselling)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1EH3u3SNNPSKUZ5DN7JtABVDc9wi54pVA/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester IV Group-C-->
+    <div id="Semester IV Group-C" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-IV Group-C</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">FCR</a></button> <button class="pill_button"><a href="">SA&PM</a></button> <button class="pill_button"><a href="">RM&D</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-431</h2>
+                    <p class="about_us_title" style="display: inline;">(Financial Control & Reporting)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-432</h2>
+                    <p class="about_us_title" style="display: inline;">(Security Analysis & Portfolio Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1ED5zx2pdTQDVELWiFjYLIeS--oh8DGsH/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-433</h2>
+                    <p class="about_us_title" style="display: inline;">(Risk Management & Derivatives)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E3WH98kfMNO_d2meDZbPBCWeW4ic0hOb/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Semester IV Group-D-->
+    <div id="Semester IV Group-D" class="about_us_section" style="padding: 0 0 0.5rem 0; margin: 1rem 0;">
+        <h1 style="margin: 0; ">Semester-IV Group-D</h1>
+        <p style="display:inline;">Solutions: </p> <button class="pill_button"><a href="">PP&C</a></button> <button class="pill_button"><a href="">MM</a></button> <button class="pill_button"><a href="">LASCM</a></button> <button class="pill_button"><a href="">BEE</a></button> <button class="pill_button"><a href="">BPCS</a></button>       </div>
+    <div class="about_us_row">
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-441</h2>
+                    <p class="about_us_title" style="display: inline;">(Production Planning & Control)</p>
+                </div><iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E4fdtbedlF4SEQhMoWrnmeN7V1TzMT5E/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-442</h2>
+                    <p class="about_us_title" style="display: inline;">(Materials Management)</p>
+                </div> <iframe  style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1ED5zx2pdTQDVELWiFjYLIeS--oh8DGsH/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-443</h2>
+                    <p class="about_us_title" style="display: inline;">(Logistics And Supply Chain Management)</p>
+                </div><iframe   style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1EH3u3SNNPSKUZ5DN7JtABVDc9wi54pVA/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-401</h2>
+                    <p class="about_us_title" style="display: inline;">(Business Environment Entrepreneurship)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E1Q7fscpYEqsFvEbOxnsB6fJdINDKYTz/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+        <div class="about_us_column2">
+            <div class="about_us_card2">
+                <!--<div class="about_us_container" style="padding: 0.5rem;">
+                    <h2 style="margin: 0; display: inline;">MB-402</h2>
+                    <p class="about_us_title" style="display: inline;">(Business Policy And Corporate Strategy)</p>
+                </div> <iframe style="height: 30rem;" , frameborder="0" src="https://drive.google.com/file/d/1E3WH98kfMNO_d2meDZbPBCWeW4ic0hOb/preview" width="100%" height="400px" allow="autoplay"></iframe>-->
+             </div>
+        </div>
+    </div>
+
+    <!--Footer--> <footer class="footer-distributed "> <div class="footer-left "> <img src="./assets/gifs/Exam Jarvis Logo.gif " alt="Exam Jarvis
+                    "> <h3>Exam<span>Jarvis</span></h3> <p class="footer-links "> <a href="./index.html ">Main Page</a> | <a href="#Home ">Home</a> | <a href="#Semester I ">Semester I</a> | <a href="#Semester II ">Semester II</a> | <a href="#Semester III Group-A">Semester III Group-A</a> | <a href="#Semester III Group-B">Semester III Group-B</a> | <a href="#Semester III Group-C">Semester III Group-C</a> | <a href="#Semester III Group-D">Semester III Group-D</a> | <a href="#Semester III Group-E">Semester III Group-E</a> | <a href="#Semester III Group-F">Semester III Group-F</a> | <a href="#Semester III Group-G">Semester III Group-G</a> | <a href="#Semester III Group-H">Semester III Group-H</a> | <a href="#Semester III Group-I">Semester III Group-I</a> | <a href="#Semester III Group-J">Semester III Group-J</a> | <a href="#Semester IV Group-A
+                    ">Semester IV Group-A</a> | <a href="#Semester IV Group-B">Semester IV Group-B</a> | <a href="#Semester IV Group-C">Semester IV Group-C</a> | <a href="#Semester IV Group-D">Semester IV Group-D</a> </p> <p class="footer-company-name ">© 2021 Alive To Code</p> <p></p> <p class="footer-company-name ">Designed & developed by Raunak Raj, Deepansh Kumar,</p> <p class="footer-company-name
+                    "> Parth Chaudhary, Sandeep Mazumdar</p> </div> <div class="footer-center "> <div> <i class="fa fa-map-marker "></i> <p><span>Muzaffarpur, Bihar,</span> Bharat(भारत)</p> <p> </p> </div> <div> <i class="fa fa-phone "></i> <p>Currently Unavailable</p> <p> </p> </div> <div> <i class="fa fa-envelope
+                    "></i> <p><a href="mailto:alivetocode4@gmail.com ">alivetocode4@gmail.com</a></p> <p> </p> </div> </div> <div class="footer-right "> <p class="footer-company-about "> <span>Social media links:</span> </p> <div class="footer-icons "> <a href="#
+                    "><i class="fa fa-facebook "></i></a> <a href="# "><i class="fa fa-twitter "></i></a> <a href="# "><i class="fa fa-linkedin "></i></a> <a href="# "><i class="fa fa-youtube "></i></a> </div> <p style="margin-top: 10%; " class="footer-company-about
+                    "> <span>Visitor's number:</span> </p> <div> <img src="https://counter10.stat.ovh/private/freecounterstat.php?c=t1yeql82m2hadqgh4ybzx77ptugnz79n " border="0 " title="hit counter " alt="hit counter "> </div> </div> </footer> <script src="./js/main.js "></script></body></html>
